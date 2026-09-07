@@ -1,0 +1,11 @@
+{
+  "_comment": "EDIT THIS FILE before relying on live reports. organization_sector and tracked_products are self-declared facts only you can know; the engine cannot verify them. Matches are deliberately specific product strings, not bare vendor names, so a daily briefing stays about your real footprint rather than every historical CVE that vendor has ever had.",
+  "organization_sector": "EDIT ME: e.g. financial services, healthcare, manufacturing",
+  "kev_lookback_days": 30,
+  "tracked_products": [
+    {"match": "ivanti connect secure", "owner": "IT Operations", "internet_exposure": true, "production": true, "data_sensitivity": "high"},
+    {"match": "fortios", "owner": "Network Security", "internet_exposure": true, "production": true, "data_sensitivity": "medium"},
+    {"match": "apache http server", "owner": "Platform Engineering", "internet_exposure": true, "production": true, "data_sensitivity": "high"},
+    {"match": "microsoft exchange server", "owner": "IT Operations", "internet_exposure": true, "production": true, "data_sensitivity": "high"}
+  ]
+}

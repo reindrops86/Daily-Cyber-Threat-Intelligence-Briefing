@@ -1,0 +1,12 @@
+[
+  {
+    "signal_type": "actor_campaign_activity",
+    "subject": "REPLACE-WITH-YOUR-ACTOR-ID",
+    "source": "REPLACE: e.g. your CTI vendor feed name",
+    "source_reliability": "B",
+    "confidence": 0.8,
+    "detail": "REPLACE with the actual reported activity.",
+    "observed_at": "2026-01-01",
+    "collected_at": "2026-01-01"
+  }
+]

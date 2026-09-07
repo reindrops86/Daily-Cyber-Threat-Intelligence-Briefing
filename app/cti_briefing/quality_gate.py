@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from .schema import SYNTHETIC_BANNER, Item, looks_unsafe
+from .schema import LIVE_BANNER, SYNTHETIC_BANNER, Item, looks_unsafe
 
 
 @dataclass
@@ -19,24 +19,34 @@ class GateResult:
     detail: str
 
 
-def run_quality_gate(items: list[Item], rendered: dict[str, str], previous_rendered: dict[str, str] | None) -> list[GateResult]:
+def run_quality_gate(
+    items: list[Item], rendered: dict[str, str], previous_rendered: dict[str, str] | None,
+    live: bool = False,
+) -> list[GateResult]:
     results: list[GateResult] = []
+    expected_banner = LIVE_BANNER if live else SYNTHETIC_BANNER
 
     results.append(GateResult(
-        "synthetic_data_labeled", all(SYNTHETIC_BANNER in text for text in rendered.values()), True,
-        "Every report must carry the synthetic-data banner.",
+        "data_mode_labeled", all(expected_banner in text for text in rendered.values()), True,
+        "Every report must carry the live-data banner." if live else "Every report must carry the synthetic-data banner.",
     ))
 
-    unsafe_findings = []
-    for item in items:
-        for record in item.evidence:
-            reason = looks_unsafe(record.statement)
-            if reason:
-                unsafe_findings.append(f"{item.item_id}: {reason}")
-    results.append(GateResult(
-        "no_unsafe_live_indicators", not unsafe_findings, True,
-        "; ".join(unsafe_findings) if unsafe_findings else "All indicators are within reserved/example ranges.",
-    ))
+    if live:
+        results.append(GateResult(
+            "unsafe_indicator_check", True, False,
+            "Skipped in live mode: live findings intentionally reference real public vulnerability data.",
+        ))
+    else:
+        unsafe_findings = []
+        for item in items:
+            for record in item.evidence:
+                reason = looks_unsafe(record.statement)
+                if reason:
+                    unsafe_findings.append(f"{item.item_id}: {reason}")
+        results.append(GateResult(
+            "no_unsafe_live_indicators", not unsafe_findings, True,
+            "; ".join(unsafe_findings) if unsafe_findings else "All indicators are within reserved/example ranges.",
+        ))
 
     claims_ok = all(item.components for item in items)
     results.append(GateResult(

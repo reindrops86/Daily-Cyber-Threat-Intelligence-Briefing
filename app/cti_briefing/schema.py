@@ -18,6 +18,17 @@ SYNTHETIC_BANNER = (
     "action any value in this report against real infrastructure."
 )
 
+LIVE_BANNER = (
+    "LIVE DATA: vulnerability existence, exploitation status, and severity are "
+    "sourced from the public CISA KEV catalog and the NVD API. Sector "
+    "relevance and environment reachability are self-declared by the analyst "
+    "in config/watchlist.json and are not independently verified -- edit that "
+    "file to match your real environment before relying on this report. "
+    "Actor-campaign, dark-web, and corroborated-indicator findings do not "
+    "appear here unless supplied via data/manual_signals.json; this project "
+    "has no live source for those signal types."
+)
+
 # Reserved, non-routable ranges (RFC 5737 / RFC 2606) so no fixture can be
 # mistaken for a real indicator worth blocking.
 SAFE_IP_PREFIXES = ("192.0.2.", "198.51.100.", "203.0.113.")

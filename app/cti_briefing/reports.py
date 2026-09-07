@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from .schema import SYNTHETIC_BANNER, Item
+from .schema import LIVE_BANNER, SYNTHETIC_BANNER, Item
 
 CONFIDENCE_LEGEND = (
     "Confidence bands: >=0.85 high (multiple reliable sources or direct "
@@ -43,24 +43,25 @@ def _state_caveat(item: Item) -> str:
 
 def render(
     items: list[Item], day_label: str, generated_at: str,
-    history_lines: list[str], trend: dict[str, Any] | None = None,
+    history_lines: list[str], trend: dict[str, Any] | None = None, live: bool = False,
 ) -> dict[str, str]:
     reportable = [item for item in items if not item.suppressed]
     suppressed = [item for item in items if item.suppressed]
+    banner = LIVE_BANNER if live else SYNTHETIC_BANNER
 
     analyst = [
         f"# Analyst Briefing - {day_label}", "",
         f"**Generated:** {generated_at}", "",
-        f"> {SYNTHETIC_BANNER}", "",
+        f"> {banner}", "",
         f"_{SCORING_LEGEND}_", "",
         f"_{CONFIDENCE_LEGEND}_", "",
     ]
     executive = [
         f"# Executive Summary - {day_label}", "",
-        f"> {SYNTHETIC_BANNER}", "",
+        f"> {banner}", "",
         "## Material Risks", "",
     ]
-    watchlist = [f"# Watchlist - {day_label}", "", f"> {SYNTHETIC_BANNER}", ""]
+    watchlist = [f"# Watchlist - {day_label}", "", f"> {banner}", ""]
     resolved_lines: list[str] = []
 
     for item in reportable:

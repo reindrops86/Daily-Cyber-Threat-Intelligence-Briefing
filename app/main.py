@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import argparse
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -11,7 +13,7 @@ from app.cti_briefing.schema import parse_date
 from app.cti_briefing.simulate import ASSET_CONTEXT, RUN_DATES, demo_days, demo_feedback
 
 
-def main() -> int:
+def run_demo() -> int:
     report_dir = Path(__file__).resolve().parent.parent / "reports"
     report_dir.mkdir(exist_ok=True)
 
@@ -65,6 +67,19 @@ def main() -> int:
         f"tracked findings total {final_trend['tracked_findings_total']}."
     )
     return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Daily cyber threat intelligence briefing")
+    sub = parser.add_subparsers(dest="command")
+    sub.add_parser("demo", help="deterministic five-day synthetic walkthrough (default)")
+    sub.add_parser("live", help="fetch CISA KEV and NVD, correlate against config/watchlist.json")
+    args = parser.parse_args(argv if argv is not None else sys.argv[1:])
+
+    if args.command == "live":
+        from app.cti_briefing.live import run as run_live
+        return run_live()
+    return run_demo()
 
 
 if __name__ == "__main__":

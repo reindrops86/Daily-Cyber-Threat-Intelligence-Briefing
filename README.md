@@ -129,10 +129,12 @@ exposure trend (sum of reportable scores per day).
 Before a day's reports overwrite the `latest-*.md` files, `quality_gate.run_quality_gate`
 checks:
 
-- **Synthetic data labeled** (hard) -- every report carries the synthetic-data banner.
-- **No unsafe live indicators** (hard) -- every IP in evidence text is in a reserved
-  TEST-NET range and every domain used as an indicator ends in `.example`/`.test`/
-  `.invalid`/`.localhost`.
+- **Data mode labeled** (hard) -- every report carries the synthetic-data banner in demo
+  mode, or the live-data banner in live mode.
+- **No unsafe live indicators** (hard, demo mode only) -- every IP in evidence text is in a
+  reserved TEST-NET range and every domain used as an indicator ends in
+  `.example`/`.test`/`.invalid`/`.localhost`. This check is intentionally skipped in live
+  mode, where real indicators are the point.
 - **Confidence scores explainable** (hard) -- every item exposes its scoring components.
 - **Resolved findings have remediation proof** (hard) -- no item in `MITIGATED` or
   `RESOLVED` without at least one remediation-evidence record attached.
@@ -142,41 +144,66 @@ checks:
 If a hard check fails, that day's dated report and quality-gate file are still written
 for audit purposes, but `latest-*.md` is not overwritten and the run prints a warning.
 
-## Run and reproduce
+## Two modes: demo and live
 
 ```powershell
-python -m app.main
+python -m app.main            # demo (default): deterministic five-day synthetic walkthrough
+python -m app.main live       # live: real CISA KEV + NVD data, correlated against your config
 python -m pytest -q
 ```
 
-`python -m app.main` replays a fixed five-day synthetic feed
-(`app/cti_briefing/simulate.py`, dated 2026-09-01 through 2026-09-05) through the full
-pipeline and writes, for each day, an analyst briefing, an executive summary, a
-watchlist, and a quality-gate report to `reports/`, plus `latest-*.md` copies of the most
-recent day. The collection dates in the fixture are fixed for reproducibility; the
-`**Generated:**` line in each analyst report uses the actual wall-clock time the command
-was run. Because the fixture is deterministic, running the command again reproduces
-identical dated reports.
+**Demo mode** replays a fixed five-day synthetic feed (`app/cti_briefing/simulate.py`, dated
+2026-09-01 through 2026-09-05) and writes `{date}-{audience}.md` and `latest-{audience}.md`
+reports. It is fully deterministic and requires no configuration or network access.
+
+**Live mode** fetches the public [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+and the [NVD API](https://nvd.nist.gov/developers) -- both free, unauthenticated, and
+real -- and writes `live-{audience}.md` reports for today's actual date. What is genuinely
+live: a CVE's existence, its exploitation status, and its severity. What is **self-declared**,
+not verified: whether a given product is in your environment and whether your sector is
+targeted, both taken from `config/watchlist.json`, which you must edit to mean anything for
+your own environment. What is **unavailable** without a paid feed or internal telemetry:
+actor-campaign activity, dark-web mentions, and corroborated indicators -- these never
+appear in live mode unless you supply them yourself via `data/manual_signals.json` (see
+`data/manual_signals.example.json` for the format). Live mode persists lifecycle state to
+`data/state.json` between runs, since each scheduled run is a fresh process on a new day.
+
+By default, only KEV entries added within the last `kev_lookback_days` (30, configurable in
+`config/watchlist.json`) are considered, and only for products you have listed. This keeps a
+live daily briefing about new activity rather than a permanent restatement of your entire
+historical KEV exposure.
 
 ## Daily Automation
 
-`.github/workflows/daily-reports.yml` runs the briefing pipeline every day at 11:00 UTC
-and can be started manually from the repository's **Actions** tab. It uploads the day's
-reports and commits changed artifacts only when their content differs from the previous
-run.
+Two independent workflows run on a schedule and can also be started manually from the
+repository's **Actions** tab:
+
+- `.github/workflows/daily-reports.yml` runs demo mode every day at 11:00 UTC.
+- `.github/workflows/daily-live-briefing.yml` runs live mode every day at 11:30 UTC,
+  fetching CISA KEV and NVD over the public internet (no secrets or credentials required).
+
+Both upload their reports as workflow artifacts and commit changed report files (and, for
+live mode, `data/state.json`) only when their content differs from the previous run.
 
 ## Layout
 
 ```
 app/
-  main.py                        orchestrates a run: correlate -> gate -> render -> write
+  main.py                        CLI: demo (default) or live
   cti_briefing/
     schema.py                    Signal, Item, AssetContext, states, TTLs, safety checks
     engine.py                    rule definitions, corroboration, scoring, advance()
     feedback.py                  analyst feedback log and executive trend metrics
-    quality_gate.py               pre-publish checks
-    reports.py                    analyst / executive / watchlist rendering
+    quality_gate.py               pre-publish checks (mode-aware)
+    reports.py                    analyst / executive / watchlist rendering (mode-aware)
     simulate.py                   five-day synthetic fixture (safe, reserved indicators)
+    collectors.py                 live CISA KEV and NVD fetchers (public, no API key)
+    live.py                       live-mode orchestration: fetch -> correlate -> render
+    state_store.py                persists finding state to data/state.json between runs
+config/
+  watchlist.json                 EDIT ME: your sector and the products you actually run
+data/
+  manual_signals.example.json    format for analyst-supplied campaign/dark-web/IOC evidence
 tests/
   test_lifecycle.py              state-machine unit tests, incl. the full transition chain
   test_core.py                   integration tests over the demo fixture and quality gate
@@ -200,6 +227,11 @@ reports/                         generated markdown, one set per day plus `lates
   scoring weights are illustrative and hand-set, not calibrated against real outcome
   data. Production use would require real collectors, a real collection-health signal,
   and calibration against a labeled history of true/false positives.
+- **Live mode is only as complete as your `config/watchlist.json`.** It has no way to
+  discover what you actually run; an empty or generic watchlist produces an honestly
+  empty briefing, not an error. It is also missing four of the five signal types this
+  engine supports -- actor campaigns, dark-web mentions, internal telemetry, and
+  multi-source corroboration all require a source this project does not have access to.
 
 ## License
 
