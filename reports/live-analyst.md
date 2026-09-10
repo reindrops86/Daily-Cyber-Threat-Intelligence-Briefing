@@ -11,10 +11,10 @@ _Confidence bands: >=0.85 high (multiple reliable sources or direct telemetry), 
 ## CTI-001:CVE-2025-25249 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249
 **Severity:** high | **Score:** 64.92 | **State:** UNCHANGED
 **What changed:** No material change since the previous briefing.
-**Why reported today:** state changed to UNCHANGED
+**Why reported today:** severity requires continued visibility
 **Independent sources:** 3
 **Evidence:**
-- [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12). (first seen 2026-09-09, last seen 2026-09-10; source date 2026-09-09; collected 2026-09-10T20:19:31+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
+- [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12). (first seen 2026-09-09, last seen 2026-09-10; source date 2026-09-09; collected 2026-09-10T20:21:55+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
 - [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment. (first seen 2026-09-10, last seen 2026-09-10; source date 2026-09-10; collected 2026-09-10)
 - [user_watchlist_config, reliability C, confidence 0.60, supports] Organization sector declared as 'EDIT ME: e.g. financial services, healthcare, manufacturing' in config/watchlist.json; this is a self-declared business fact, not independently corroborated. (first seen 2026-09-10, last seen 2026-09-10; source date 2026-09-10; collected 2026-09-10)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 1.155}
