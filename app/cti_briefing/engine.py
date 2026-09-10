@@ -99,11 +99,14 @@ def _merge_evidence(prior: list[EvidenceRecord], fresh: list[Signal], today: str
         existing = by_key.get(key)
         if existing:
             existing.last_observed = today
+            existing.collected_at = signal.collected_at
+            existing.source_url = signal.source_url
         else:
             by_key[key] = EvidenceRecord(
                 source=signal.source, source_reliability=signal.source_reliability,
                 confidence=signal.confidence, statement=signal.detail,
                 first_observed=signal.observed_at, last_observed=today,
+                collected_at=signal.collected_at, source_url=signal.source_url,
             )
     return list(by_key.values())
 

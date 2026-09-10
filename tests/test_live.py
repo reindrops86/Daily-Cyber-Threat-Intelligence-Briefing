@@ -6,7 +6,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from app.cti_briefing.collectors import fetch_cisa_kev, fetch_recent_high_severity_cves
+from app.cti_briefing.collectors import KEV_URL, fetch_cisa_kev, fetch_recent_high_severity_cves
 from app.cti_briefing.live import build_live_signals
 from app.cti_briefing.state_store import load_state, save_state
 
@@ -53,12 +53,16 @@ def test_fetch_cisa_kev_skips_entries_with_no_cve_id():
     assert signals[0].subject == "CVE-2024-0001"
     assert signals[0].signal_type == "known_exploited_vulnerability"
     assert signals[0].source == "cisa_kev"
+    assert signals[0].source_url == KEV_URL
+    assert signals[0].collected_at.endswith("+00:00")
 
 
 def test_fetch_recent_high_severity_cves_applies_the_cvss_floor():
     signals = fetch_recent_high_severity_cves(min_cvss=7.0, fetch=_fake_nvd)
     assert [s.subject for s in signals] == ["CVE-2024-0002"]
     assert signals[0].signal_type == "high_severity_vulnerability"
+    assert signals[0].source_url == "https://nvd.nist.gov/vuln/detail/CVE-2024-0002"
+    assert signals[0].collected_at.endswith("+00:00")
 
 
 def test_build_live_signals_never_invents_reachability_for_unmatched_products():
@@ -97,6 +101,20 @@ def test_state_round_trips_through_disk(tmp_path: Path):
 
     assert reloaded[item.item_id].state == "NEW"
     assert reloaded[item.item_id].evidence[0].statement == "test"
+
+
+def test_evidence_line_renders_source_provenance():
+    from app.cti_briefing.schema import EvidenceRecord
+
+    evidence = EvidenceRecord(
+        "nvd", "A", 0.9, "NVD CVE", "2026-01-02", "2026-01-02",
+        collected_at="2026-01-03T11:30:00+00:00",
+        source_url="https://nvd.nist.gov/vuln/detail/CVE-2024-0002",
+    )
+
+    assert "source date 2026-01-02" in evidence.line()
+    assert "collected 2026-01-03T11:30:00+00:00" in evidence.line()
+    assert "[original source](https://nvd.nist.gov/vuln/detail/CVE-2024-0002)" in evidence.line()
 
 
 def test_load_state_returns_empty_dict_when_file_is_absent(tmp_path: Path):

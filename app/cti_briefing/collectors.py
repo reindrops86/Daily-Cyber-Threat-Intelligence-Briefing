@@ -46,6 +46,7 @@ def fetch_cisa_kev(fetch: Callable[[str], dict] = _get_json) -> list[Signal]:
     vulnerability with confirmed evidence of active exploitation."""
     payload = fetch(KEV_URL)
     today = date.today().isoformat()
+    collected_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     signals: list[Signal] = []
     for entry in payload.get("vulnerabilities", []):
         cve = entry.get("cveID")
@@ -64,8 +65,9 @@ def fetch_cisa_kev(fetch: Callable[[str], dict] = _get_json) -> list[Signal]:
                 f"{entry.get('dueDate', 'unknown')})."
             ),
             observed_at=entry.get("dateAdded", today),
-            collected_at=today,
+            collected_at=collected_at,
             upstream_id=f"cisa-kev:{cve}",
+            source_url=KEV_URL,
         ))
     return signals
 
@@ -88,6 +90,7 @@ def fetch_recent_high_severity_cves(
     )
     payload = fetch(url)
     today = date.today().isoformat()
+    collected_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     signals: list[Signal] = []
     for item in payload.get("vulnerabilities", []):
         cve = item.get("cve", {})
@@ -110,6 +113,7 @@ def fetch_recent_high_severity_cves(
             confidence=0.9,
             detail=f"NVD: {cve_id}, CVSS {score}. {summary[:200]}",
             observed_at=(cve.get("published") or today)[:10],
-            collected_at=today,
+            collected_at=collected_at,
+            source_url=f"https://nvd.nist.gov/vuln/detail/{cve_id}",
         ))
     return signals

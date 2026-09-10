@@ -90,6 +90,7 @@ class Signal:
     upstream_id: str | None = None  # shared id => signals are not independent sources
     remediation_kind: str | None = None
     remediation_verified: bool = False
+    source_url: str | None = None
 
     def ttl_days(self) -> int:
         return SIGNAL_TTL_DAYS.get(self.signal_type, DEFAULT_SIGNAL_TTL_DAYS)
@@ -107,13 +108,21 @@ class EvidenceRecord:
     first_observed: str
     last_observed: str
     supports: bool = True
+    collected_at: str | None = None
+    source_url: str | None = None
 
     def line(self) -> str:
         stance = "supports" if self.supports else "contradicts"
+        provenance = [
+            f"source date {self.first_observed}",
+            f"collected {self.collected_at}" if self.collected_at else "",
+            f"[original source]({self.source_url})" if self.source_url else "",
+        ]
         return (
             f"[{self.source}, reliability {self.source_reliability}, "
             f"confidence {self.confidence:.2f}, {stance}] {self.statement} "
-            f"(first seen {self.first_observed}, last seen {self.last_observed})"
+            f"(first seen {self.first_observed}, last seen {self.last_observed}; "
+            f"{'; '.join(part for part in provenance if part)})"
         )
 
 
