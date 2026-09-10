@@ -4,7 +4,7 @@
 
 ## Material Risks
 
-- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249 (score 64.92, NEW). Owner: Network Security. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
+- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249 (score 64.92, UNCHANGED). Owner: Network Security. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 
 ## Resolved Since Last Briefing
 
@@ -19,4 +19,3 @@ Suppressed findings are not deleted. They remain tracked with full history so th
 ## Trend
 
 - 2026-09-10: 1 reported, 0 critical, 0 suppressed
-  (note: NVD unavailable this run: could not reach https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-09-08T15:03:45.000&pubEndDate=2026-09-10T15:03:45.000&resultsPerPage=25: The read operation timed out)

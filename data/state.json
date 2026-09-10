@@ -13,8 +13,8 @@
       "asset_multiplier": 1.155
     },
     "severity": "high",
-    "state": "NEW",
-    "change": "First observed.",
+    "state": "UNCHANGED",
+    "change": "No material change since the previous briefing.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -23,7 +23,9 @@
         "statement": "CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-10",
-        "supports": true
+        "supports": true,
+        "collected_at": "2026-09-10T20:19:31+00:00",
+        "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
         "source": "user_watchlist_config",
@@ -32,7 +34,9 @@
         "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-10",
         "last_observed": "2026-09-10",
-        "supports": true
+        "supports": true,
+        "collected_at": "2026-09-10",
+        "source_url": null
       },
       {
         "source": "user_watchlist_config",
@@ -41,7 +45,9 @@
         "statement": "Organization sector declared as 'EDIT ME: e.g. financial services, healthcare, manufacturing' in config/watchlist.json; this is a self-declared business fact, not independently corroborated.",
         "first_observed": "2026-09-10",
         "last_observed": "2026-09-10",
-        "supports": true
+        "supports": true,
+        "collected_at": "2026-09-10",
+        "source_url": null
       }
     ],
     "owner": "Network Security",
@@ -55,11 +61,17 @@
     "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
-    "reportable_reason": "state changed to NEW",
+    "reportable_reason": "state changed to UNCHANGED",
     "history": [
       {
         "day": "2026-09-10",
         "state": "NEW",
+        "score": 64.92,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-10",
+        "state": "UNCHANGED",
         "score": 64.92,
         "severity": "high"
       }
