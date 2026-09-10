@@ -1,9 +1,22 @@
-# Analyst Briefing - 2026-09-09
+# Analyst Briefing - 2026-09-10
 
-**Generated:** 2026-09-09
+**Generated:** 2026-09-10
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Actor-campaign, dark-web, and corroborated-indicator findings do not appear here unless supplied via data/manual_signals.json; this project has no live source for those signal types.
 
 _Score = base (rule severity) x amplifier_factor (extra corroborating signal types) x source_confidence (independent sources, capped so circular reporting cannot inflate it) x signal_confidence (mean collector confidence) x asset_multiplier (data sensitivity, exposure, and operational importance of the affected asset), capped at 100. Severity is a fixed band on that score, never hand-set._
 
 _Confidence bands: >=0.85 high (multiple reliable sources or direct telemetry), 0.60-0.84 moderate (single reliable source or partial corroboration), <0.60 low (single low-reliability source, e.g. an unconfirmed dark-web post)._
+
+## CTI-001:CVE-2025-25249 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249
+**Severity:** high | **Score:** 64.92 | **State:** NEW
+**What changed:** First observed.
+**Why reported today:** state changed to NEW
+**Independent sources:** 3
+**Evidence:**
+- [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12). (first seen 2026-09-09, last seen 2026-09-10)
+- [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment. (first seen 2026-09-10, last seen 2026-09-10)
+- [user_watchlist_config, reliability C, confidence 0.60, supports] Organization sector declared as 'EDIT ME: e.g. financial services, healthcare, manufacturing' in config/watchlist.json; this is a self-declared business fact, not independently corroborated. (first seen 2026-09-10, last seen 2026-09-10)
+**Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 1.155}
+**Owner:** Network Security | **Deadline:** 2026-09-17 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
+**Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.

@@ -1,1 +1,68 @@
-{}
+{
+  "CTI-001:CVE-2025-25249": {
+    "item_id": "CTI-001:CVE-2025-25249",
+    "rule_id": "CTI-001",
+    "title": "Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249",
+    "subject": "CVE-2025-25249",
+    "score": 64.92,
+    "components": {
+      "base": 70.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.1,
+      "signal_confidence": 0.73,
+      "asset_multiplier": 1.155
+    },
+    "severity": "high",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "cisa_kev",
+        "source_reliability": "A",
+        "confidence": 0.99,
+        "statement": "CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12).",
+        "first_observed": "2026-09-09",
+        "last_observed": "2026-09-10",
+        "supports": true
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "B",
+        "confidence": 0.6,
+        "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
+        "first_observed": "2026-09-10",
+        "last_observed": "2026-09-10",
+        "supports": true
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "C",
+        "confidence": 0.6,
+        "statement": "Organization sector declared as 'EDIT ME: e.g. financial services, healthcare, manufacturing' in config/watchlist.json; this is a self-declared business fact, not independently corroborated.",
+        "first_observed": "2026-09-10",
+        "last_observed": "2026-09-10",
+        "supports": true
+      }
+    ],
+    "owner": "Network Security",
+    "action": "Patch or virtually patch within the SLA window; confirm compensating controls until then.",
+    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
+    "deadline": "2026-09-17",
+    "first_seen": "2026-09-10",
+    "last_seen": "2026-09-10",
+    "last_evidence_at": "2026-09-10",
+    "remediation": [],
+    "independent_sources": 3,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-10",
+        "state": "NEW",
+        "score": 64.92,
+        "severity": "high"
+      }
+    ]
+  }
+}
