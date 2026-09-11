@@ -22,9 +22,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-10",
+        "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-10T20:21:55+00:00",
+        "collected_at": "2026-09-11T15:06:29+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -33,9 +33,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-10",
-        "last_observed": "2026-09-10",
+        "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-10",
+        "collected_at": "2026-09-11",
         "source_url": null
       },
       {
@@ -44,9 +44,9 @@
         "confidence": 0.6,
         "statement": "Organization sector declared as 'EDIT ME: e.g. financial services, healthcare, manufacturing' in config/watchlist.json; this is a self-declared business fact, not independently corroborated.",
         "first_observed": "2026-09-10",
-        "last_observed": "2026-09-10",
+        "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-10",
+        "collected_at": "2026-09-11",
         "source_url": null
       }
     ],
@@ -55,8 +55,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-17",
     "first_seen": "2026-09-10",
-    "last_seen": "2026-09-10",
-    "last_evidence_at": "2026-09-10",
+    "last_seen": "2026-09-11",
+    "last_evidence_at": "2026-09-11",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -77,6 +77,12 @@
       },
       {
         "day": "2026-09-10",
+        "state": "UNCHANGED",
+        "score": 64.92,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
         "state": "UNCHANGED",
         "score": 64.92,
         "severity": "high"
