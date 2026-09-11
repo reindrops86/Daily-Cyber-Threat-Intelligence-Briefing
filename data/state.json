@@ -24,7 +24,7 @@
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-11T21:08:15+00:00",
+        "collected_at": "2026-09-11T21:09:30+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -108,6 +108,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -136,7 +142,7 @@
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-11T21:08:15+00:00",
+        "collected_at": "2026-09-11T21:09:30+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -189,6 +195,12 @@
       {
         "day": "2026-09-11",
         "state": "NEW",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
       },
@@ -231,7 +243,7 @@
         "first_observed": "2026-08-26",
         "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-11T21:08:15+00:00",
+        "collected_at": "2026-09-11T21:09:30+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -303,6 +315,12 @@
         "day": "2026-09-11",
         "state": "UNCHANGED",
         "score": 64.92,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
+        "score": 50.59,
         "severity": "high"
       },
       {
