@@ -4,9 +4,9 @@
 
 ## Material Risks
 
-- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249 (score 50.59, ACTIVE). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
-- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-19490 (score 50.59, NEW). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
-- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-8452 (score 50.59, NEW). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
+- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
+- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-19490 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
+- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-8452 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 
 ## Resolved Since Last Briefing
 
