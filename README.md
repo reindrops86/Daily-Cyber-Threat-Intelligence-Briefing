@@ -162,11 +162,14 @@ real -- and writes `live-{audience}.md` reports for today's actual date. What is
 live: a CVE's existence, its exploitation status, and its severity. What is **self-declared**,
 not verified: whether a given product is in your environment and whether your sector is
 targeted, both taken from `config/watchlist.json`, which you must edit to mean anything for
-your own environment. What is **unavailable** without a paid feed or internal telemetry:
-actor-campaign activity, dark-web mentions, and corroborated indicators -- these never
-appear in live mode unless you supply them yourself via `data/manual_signals.json` (see
-`data/manual_signals.example.json` for the format). Live mode persists lifecycle state to
-`data/state.json` between runs, since each scheduled run is a fresh process on a new day.
+your own environment. Each entry in `tracked_products` may also set its own `sector` field,
+which overrides the top-level `organization_sector` in that product's evidence text -- useful
+when different tracked products matter to different sectors you follow. What is **unavailable**
+without a paid feed or internal telemetry: actor-campaign activity, dark-web mentions, and
+corroborated indicators -- these never appear in live mode unless you supply them yourself via
+`data/manual_signals.json` (see `data/manual_signals.example.json` for the format). Live mode
+persists lifecycle state to `data/state.json` between runs, since each scheduled run is a fresh
+process on a new day.
 
 By default, only KEV entries added within the last `kev_lookback_days` (30, configurable in
 `config/watchlist.json`) are considered, and only for products you have listed. This keeps a
