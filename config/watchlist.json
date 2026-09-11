@@ -1,12 +1,12 @@
 {
-  "_comment": "Personal research watchlist, not an owned/operated environment. organization_sector and tracked_products only mark research interest in these industries; internet_exposure and production are left false because no real asset is owned. Matches are deliberately specific product strings, not bare vendor names, so a daily briefing stays about vendors of interest rather than every historical CVE that vendor has ever had.",
+  "_comment": "Personal research watchlist, not an owned/operated environment. organization_sector and tracked_products only mark research interest in these industries; internet_exposure and production are left false because no real asset is owned. Matches are deliberately specific product strings, not bare vendor names, so a daily briefing stays about vendors of interest rather than every historical CVE that vendor has ever had. Each product's optional 'sector' field lets a report distinguish which specific sector a match is relevant to; it falls back to organization_sector when omitted. The five entries below are generic enterprise IT infrastructure with no factual basis to assign to one sector over the other, so both are tagged 'airlines and healthcare' -- add airline-specific or healthcare-specific systems here for a genuine per-sector split.",
   "organization_sector": "airlines and healthcare (research interest, not an operated environment)",
   "kev_lookback_days": 30,
   "tracked_products": [
-    {"match": "ivanti connect secure", "owner": "research", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
-    {"match": "fortios", "owner": "research", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
-    {"match": "citrix netscaler", "owner": "research", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
-    {"match": "microsoft exchange server", "owner": "research", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
-    {"match": "vmware esxi", "owner": "research", "internet_exposure": false, "production": false, "data_sensitivity": "low"}
+    {"match": "ivanti connect secure", "owner": "research", "sector": "airlines and healthcare", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
+    {"match": "fortios", "owner": "research", "sector": "airlines and healthcare", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
+    {"match": "citrix netscaler", "owner": "research", "sector": "airlines and healthcare", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
+    {"match": "microsoft exchange server", "owner": "research", "sector": "airlines and healthcare", "internet_exposure": false, "production": false, "data_sensitivity": "low"},
+    {"match": "vmware esxi", "owner": "research", "sector": "airlines and healthcare", "internet_exposure": false, "production": false, "data_sensitivity": "low"}
   ]
 }

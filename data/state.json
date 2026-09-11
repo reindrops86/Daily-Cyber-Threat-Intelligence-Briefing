@@ -24,7 +24,7 @@
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-11T21:01:03+00:00",
+        "collected_at": "2026-09-11T21:08:15+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -59,6 +59,17 @@
         "supports": true,
         "collected_at": "2026-09-11",
         "source_url": null
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "C",
+        "confidence": 0.6,
+        "statement": "Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
+        "first_observed": "2026-09-11",
+        "last_observed": "2026-09-11",
+        "supports": true,
+        "collected_at": "2026-09-11",
+        "source_url": null
       }
     ],
     "owner": "research",
@@ -72,7 +83,7 @@
     "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "reportable_reason": "severity requires continued visibility",
     "history": [
       {
         "day": "2026-09-10",
@@ -83,6 +94,12 @@
       {
         "day": "2026-09-11",
         "state": "ACTIVE",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
       },
@@ -119,7 +136,7 @@
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-11T21:01:03+00:00",
+        "collected_at": "2026-09-11T21:08:15+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -143,6 +160,17 @@
         "supports": true,
         "collected_at": "2026-09-11",
         "source_url": null
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "C",
+        "confidence": 0.6,
+        "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
+        "first_observed": "2026-09-11",
+        "last_observed": "2026-09-11",
+        "supports": true,
+        "collected_at": "2026-09-11",
+        "source_url": null
       }
     ],
     "owner": "research",
@@ -161,6 +189,12 @@
       {
         "day": "2026-09-11",
         "state": "NEW",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
       },
@@ -197,7 +231,7 @@
         "first_observed": "2026-08-26",
         "last_observed": "2026-09-11",
         "supports": true,
-        "collected_at": "2026-09-11T21:01:03+00:00",
+        "collected_at": "2026-09-11T21:08:15+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -221,6 +255,17 @@
         "supports": true,
         "collected_at": "2026-09-11",
         "source_url": null
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "C",
+        "confidence": 0.6,
+        "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
+        "first_observed": "2026-09-11",
+        "last_observed": "2026-09-11",
+        "supports": true,
+        "collected_at": "2026-09-11",
+        "source_url": null
       }
     ],
     "owner": "research",
@@ -234,7 +279,7 @@
     "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "reportable_reason": "severity requires continued visibility",
     "history": [
       {
         "day": "2026-09-11",
@@ -258,6 +303,12 @@
         "day": "2026-09-11",
         "state": "UNCHANGED",
         "score": 64.92,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
+        "score": 50.59,
         "severity": "high"
       },
       {

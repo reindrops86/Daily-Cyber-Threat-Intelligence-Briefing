@@ -87,6 +87,19 @@ def test_build_live_signals_declares_reachability_only_for_matched_products():
     assert asset_lookup["CVE-2024-0001"].internet_exposure is True
 
 
+def test_build_live_signals_uses_per_product_sector_over_global_sector():
+    kev_signals = fetch_cisa_kev(fetch=_fake_kev)
+    watchlist = {
+        "organization_sector": "financial services",
+        "tracked_products": [{"match": "apache", "owner": "x", "sector": "healthcare"}],
+    }
+    signals, _ = build_live_signals(kev_signals, watchlist)
+    sector_signals = [s for s in signals if s.signal_type == "sector_targeting"]
+    assert len(sector_signals) == 1
+    assert "healthcare" in sector_signals[0].detail
+    assert "financial services" not in sector_signals[0].detail
+
+
 def test_state_round_trips_through_disk(tmp_path: Path):
     from app.cti_briefing.engine import advance
     from app.cti_briefing.schema import Signal

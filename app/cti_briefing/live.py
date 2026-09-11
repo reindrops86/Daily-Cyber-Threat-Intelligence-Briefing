@@ -93,13 +93,14 @@ def build_live_signals(
             ),
             observed_at=today, collected_at=today,
         ))
-        if sector:
+        product_sector = product.get("sector") or sector
+        if product_sector:
             signals.append(Signal(
                 signal_type="sector_targeting", subject=signal.subject,
                 source="user_watchlist_config", source_reliability="C", confidence=0.6,
                 detail=(
-                    f"Organization sector declared as '{sector}' in config/watchlist.json; "
-                    "this is a self-declared business fact, not independently corroborated."
+                    f"Sector relevance for '{product.get('match')}' declared as '{product_sector}' "
+                    "in config/watchlist.json; this is a self-declared judgment, not independently corroborated."
                 ),
                 observed_at=today, collected_at=today,
             ))
