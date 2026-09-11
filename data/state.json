@@ -102,8 +102,8 @@
       "asset_multiplier": 0.9
     },
     "severity": "high",
-    "state": "NEW",
-    "change": "First observed.",
+    "state": "UNCHANGED",
+    "change": "No material change since the previous briefing.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -150,7 +150,7 @@
     "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
-    "reportable_reason": "state changed to NEW",
+    "reportable_reason": "severity requires continued visibility",
     "history": [
       {
         "day": "2026-09-11",
@@ -228,6 +228,24 @@
         "day": "2026-09-11",
         "state": "NEW",
         "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-10",
+        "state": "UNCHANGED",
+        "score": 64.92,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-10",
+        "state": "UNCHANGED",
+        "score": 64.92,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-11",
+        "state": "UNCHANGED",
+        "score": 64.92,
         "severity": "high"
       }
     ]
