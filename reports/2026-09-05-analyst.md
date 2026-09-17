@@ -1,6 +1,6 @@
 # Analyst Briefing - 2026-09-05
 
-**Generated:** 2026-09-17 14:14 UTC
+**Generated:** 2026-09-17 15:22 UTC
 
 > SYNTHETIC DATA ONLY: every actor, CVE, organization, IP address, domain, and telemetry event in this report is fabricated for demonstration. None of it corresponds to a real vulnerability, incident, or indicator. Do not action any value in this report against real infrastructure.
 
