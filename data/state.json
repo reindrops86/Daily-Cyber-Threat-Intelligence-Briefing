@@ -22,9 +22,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19T14:33:25+00:00",
+        "collected_at": "2026-09-20T14:45:22+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -33,9 +33,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-10",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19",
+        "collected_at": "2026-09-20",
         "source_url": null
       },
       {
@@ -66,9 +66,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19",
+        "collected_at": "2026-09-20",
         "source_url": null
       }
     ],
@@ -77,8 +77,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-17",
     "first_seen": "2026-09-10",
-    "last_seen": "2026-09-19",
-    "last_evidence_at": "2026-09-19",
+    "last_seen": "2026-09-20",
+    "last_evidence_at": "2026-09-20",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -162,6 +162,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-20",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -188,9 +194,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19T14:33:25+00:00",
+        "collected_at": "2026-09-20T14:45:22+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -199,9 +205,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19",
+        "collected_at": "2026-09-20",
         "source_url": null
       },
       {
@@ -221,9 +227,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19",
+        "collected_at": "2026-09-20",
         "source_url": null
       }
     ],
@@ -232,8 +238,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-19",
-    "last_evidence_at": "2026-09-19",
+    "last_seen": "2026-09-20",
+    "last_evidence_at": "2026-09-20",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -308,6 +314,12 @@
       },
       {
         "day": "2026-09-19",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-20",
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
@@ -337,9 +349,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler ADC and NetScaler Gateway - Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.  (added 2026-08-26, remediation due 2026-08-29).",
         "first_observed": "2026-08-26",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19T14:33:25+00:00",
+        "collected_at": "2026-09-20T14:45:22+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -348,9 +360,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19",
+        "collected_at": "2026-09-20",
         "source_url": null
       },
       {
@@ -370,9 +382,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-19",
+        "last_observed": "2026-09-20",
         "supports": true,
-        "collected_at": "2026-09-19",
+        "collected_at": "2026-09-20",
         "source_url": null
       }
     ],
@@ -381,8 +393,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-19",
-    "last_evidence_at": "2026-09-19",
+    "last_seen": "2026-09-20",
+    "last_evidence_at": "2026-09-20",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -475,6 +487,12 @@
       },
       {
         "day": "2026-09-19",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-09-20",
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
