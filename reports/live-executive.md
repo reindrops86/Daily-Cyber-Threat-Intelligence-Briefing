@@ -20,4 +20,4 @@ Suppressed findings are not deleted. They remain tracked with full history so th
 
 ## Trend
 
-- 2026-09-24: 3 reported, 0 critical, 0 suppressed
+- 2026-09-24: 33 reported, 0 critical, 0 suppressed
