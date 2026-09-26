@@ -22,9 +22,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
-        "collected_at": "2026-09-25T15:51:52+00:00",
+        "collected_at": "2026-09-26T15:02:04+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -33,9 +33,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-10",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
-        "collected_at": "2026-09-25",
+        "collected_at": "2026-09-26",
         "source_url": null
       },
       {
@@ -66,9 +66,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
-        "collected_at": "2026-09-25",
+        "collected_at": "2026-09-26",
         "source_url": null
       }
     ],
@@ -77,8 +77,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-17",
     "first_seen": "2026-09-10",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -204,6 +204,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-26",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -230,9 +236,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
-        "collected_at": "2026-09-25T15:51:52+00:00",
+        "collected_at": "2026-09-26T15:02:04+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -241,9 +247,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
-        "collected_at": "2026-09-25",
+        "collected_at": "2026-09-26",
         "source_url": null
       },
       {
@@ -263,9 +269,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
-        "collected_at": "2026-09-25",
+        "collected_at": "2026-09-26",
         "source_url": null
       }
     ],
@@ -274,8 +280,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -395,6 +401,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-26",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -412,8 +424,8 @@
       "asset_multiplier": 0.9
     },
     "severity": "high",
-    "state": "UNCHANGED",
-    "change": "No material change since the previous briefing.",
+    "state": "PENDING_VERIFICATION",
+    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -460,18 +472,18 @@
         "source_url": null
       }
     ],
-    "owner": "research",
+    "owner": "Unassigned (synthetic)",
     "action": "Patch or virtually patch within the SLA window; confirm compensating controls until then.",
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-25",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
-    "reportable_reason": "deadline passed",
+    "reportable_reason": "state changed to PENDING_VERIFICATION",
     "history": [
       {
         "day": "2026-09-11",
@@ -604,6 +616,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-26",
+        "state": "PENDING_VERIFICATION",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -622,7 +640,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -641,13 +659,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -657,6 +675,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -678,7 +702,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -697,13 +721,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -713,6 +737,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -734,7 +764,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -753,13 +783,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -769,6 +799,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -790,7 +826,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -809,13 +845,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -825,6 +861,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -846,7 +888,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -865,13 +907,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -881,6 +923,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -902,7 +950,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -921,13 +969,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -937,6 +985,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -958,7 +1012,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -977,13 +1031,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -993,6 +1047,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1014,7 +1074,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1033,13 +1093,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1049,6 +1109,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1070,7 +1136,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1089,13 +1155,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1105,6 +1171,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1126,7 +1198,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1145,13 +1217,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1161,6 +1233,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1182,7 +1260,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1201,13 +1279,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1217,6 +1295,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1238,7 +1322,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1257,13 +1341,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1273,6 +1357,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1294,7 +1384,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1313,13 +1403,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1329,6 +1419,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1350,7 +1446,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1369,13 +1465,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
+    "last_seen": "2026-09-26",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1385,6 +1481,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1414,7 +1516,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0048 (2 indicators: 138.124.14.35:9091, 93.152.214.199:8443). malware_family_overlap: correlated malware family elf.evilginx",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1425,13 +1527,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1441,6 +1543,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1470,7 +1578,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0049 (2 indicators: 177.22.119.68:9001, 207.211.189.214:443). malware_family_overlap: correlated malware family win.danabot",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1481,13 +1589,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1497,6 +1605,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1526,7 +1640,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0050 (3 indicators: chilloutvrmod.org, chilloutvrmodded.net, https://kittiesmc.com/ws). malware_family_overlap: correlated malware family unknown_stealer",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1537,13 +1651,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1553,6 +1667,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1582,7 +1702,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0051 (2 indicators: https://89.46.235.116:80/, https://89.46.235.116:9443/). malware_family_overlap: correlated malware family win.metaencryptor",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1593,13 +1713,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1609,6 +1729,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1638,7 +1764,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0052 (3 indicators: 1ca26b57598f79603d7e4da730c98965, 6161c1e746b8e29297917c72f93652a137691a3b9d4c6d6fbce38f80f7732d34, badbf7f86834fca16610045cb7c13159932bcd4b). malware_family_overlap: correlated malware family win.dboxagent",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1649,13 +1775,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1665,6 +1791,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1694,7 +1826,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0053 (3 indicators: 833cdd365d2dd29832a711dc2da5a584, c13cea04f598e2b0c248d603a6e31bd13aabb64d8149c1b6a77b64e0b983a86f, f495880eb6ee7bb930a9957f092f395695cf89a4). malware_family_overlap: correlated malware family win.logedrut",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1705,13 +1837,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1721,6 +1853,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1750,7 +1888,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0054 (3 indicators: 94ffe61fb9619a00d8c1066dc8728df2af733f0b9ca8783a93ecbe1e52e59562, dd63f54137cd8c2ba7bb43cb6a45db5b2238698c, e629a420112f2bcb593f5467a362a91a). malware_family_overlap: correlated malware family win.shimrat",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1761,13 +1899,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1777,6 +1915,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1806,7 +1950,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0055 (3 indicators: 31edc1eef538fdb429601d26422834b3, 919f9a20b675968f038bf43c009611a697f11119e037ad577bca4bb2fe746f1c, 974abebcdf2bfcb5440d9590234b4814318698eb). malware_family_overlap: correlated malware family win.nanocore",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1817,13 +1961,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1833,6 +1977,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1862,7 +2012,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0056 (3 indicators: 55d635733571cf404f3af64646dc97e9, 668dd8566eacd7b89dab013b36cccf0f94be8c4a, ce3d16f1bcb319135a99b10d4daa2a680c2cadadb8d8082b39d3696b7016e096). malware_family_overlap: correlated malware family win.gcleaner",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1873,13 +2023,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1889,6 +2039,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1918,7 +2074,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0057 (4 indicators: 0eedde175f5d230ee129dc4add72be8a32e7c05a, 12651a9b77448b0bc439f301d24fc52cd331705f10cb58103f48a1d8b02caea2, 221e2c855e78d5cc7fb84738effb88bb11a47be6ce10530c909534e15f47e0b4, c705fea2fd2e6c119c1138f1b74cd798). malware_family_overlap: correlated malware family win.svcstealer",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1929,13 +2085,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1945,6 +2101,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -1974,7 +2136,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0058 (3 indicators: 0c7dd3b979c3fdeba56c6ae312345548, 2cbd1f5b16cc5e17be51a801de7fed705a2336a5, fb48f55e9e2b1ef2d904b0f06547ce698bcb151b43dd032fc7257a7c0f940bd4). malware_family_overlap: correlated malware family jar.crossrat",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -1985,13 +2147,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2001,6 +2163,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -2030,7 +2198,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0059 (3 indicators: 541677c2ce44edbb6241907c36463e6ded77a9d7cdb48ceb4113f1111ad2f9e8, aafeaf4892cd200b9dd7b9e03259b49204d2973b, f5ec29d01c9adb0ecabb2da6bc8fb81a). malware_family_overlap: correlated malware family win.wannacryptor",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -2041,13 +2209,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2057,6 +2225,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -2086,7 +2260,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0060 (2 indicators: blancharl.icu, courtoos.icu). malware_family_overlap: correlated malware family js.kongtuke",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -2097,13 +2271,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2113,6 +2287,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -2142,7 +2322,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0061 (4 indicators: 46.246.12.23:32722, 46.246.12.23:7045, brain.dynip.se, jamesmore02.work.gd). malware_family_overlap: correlated malware family win.houdini",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -2153,13 +2333,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2169,6 +2349,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -2198,7 +2384,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0062 (3 indicators: 94.154.43.83:8443, https://ns.devmicro7.workers.dev/zips/f2d0984b93e808eb.zip, sk.bumblemovies.com). malware_family_overlap: correlated malware family jar.microstealer",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -2209,13 +2395,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2225,6 +2411,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
@@ -2254,7 +2446,7 @@
         "confidence": 0.15,
         "statement": "Threat-Ingest infrastructure cluster TI-2026-0063 (2 indicators: 2a018987d8fb348a3e5e05595afbcd4bfa5631b6e0df83219390cca2e5ea758a, https://theoremaoliveoil.com/wp-content/uploads/2019/04/pieletjf.exe). malware_family_overlap: correlated malware family win.koiloader",
         "first_observed": "2026-09-24",
-        "last_observed": "2026-09-25",
+        "last_observed": "2026-09-26",
         "supports": true,
         "collected_at": "2026-09-24T22:39:09+00:00",
         "source_url": null
@@ -2265,13 +2457,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-25",
-    "last_evidence_at": "2026-09-25",
+    "last_seen": "2026-09-26",
+    "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2281,6 +2473,12 @@
       },
       {
         "day": "2026-09-25",
+        "state": "UNCHANGED",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-26",
         "state": "UNCHANGED",
         "score": 5.25,
         "severity": "low"
