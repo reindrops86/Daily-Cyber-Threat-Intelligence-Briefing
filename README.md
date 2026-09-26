@@ -1,12 +1,12 @@
 # Daily Cyber Threat Intelligence Briefing
 
-> **All data in this project is synthetic.** Every actor id, CVE, organization name, IP
-> address, and telemetry event is fabricated for demonstration. CVE ids use the year 2099
-> and a `-SYNTH` suffix so they cannot be mistaken for a real, assignable identifier. IP
-> addresses are drawn only from the IETF-reserved TEST-NET ranges (RFC 5737):
-> `192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`. Nothing here corresponds to a real
-> vulnerability, incident, or indicator, and nothing should be actioned against real
-> infrastructure. The same banner is embedded in every generated report.
+> **Demo-mode fixtures are synthetic.** The deterministic demo uses fabricated actor ids,
+> CVEs, organizations, telemetry, and TEST-NET IP addresses; those values must never be
+> actioned against real infrastructure. Live mode instead fetches real CISA KEV and NVD
+> data and can ingest analyst-supplied signals from `data/manual_signals.json`, including
+> real infrastructure-cluster findings exported by
+> [Threat-Ingest](https://github.com/reindrops86/Threat-Ingest). Supplied signals retain
+> their source and confidence, but this project does not independently validate them.
 
 Correlates multi-source cyber threat intelligence signals into a prioritized daily
 briefing, and tracks each finding through an evidence-backed lifecycle so that a
@@ -154,7 +154,8 @@ python -m pytest -q
 
 **Demo mode** replays a fixed five-day synthetic feed (`app/cti_briefing/simulate.py`, dated
 2026-09-01 through 2026-09-05) and writes `{date}-{audience}.md` and `latest-{audience}.md`
-reports. It is fully deterministic and requires no configuration or network access.
+reports with the synthetic-data banner. It is fully deterministic and requires no
+configuration or network access.
 
 **Live mode** fetches the public [CISA KEV catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 and the [NVD API](https://nvd.nist.gov/developers) -- both free, unauthenticated, and
@@ -165,11 +166,12 @@ targeted, both taken from `config/watchlist.json`, which you must edit to mean a
 your own environment. Each entry in `tracked_products` may also set its own `sector` field,
 which overrides the top-level `organization_sector` in that product's evidence text -- useful
 when different tracked products matter to different sectors you follow. What is **unavailable**
-without a paid feed or internal telemetry: actor-campaign activity, dark-web mentions, and
-corroborated indicators -- these never appear in live mode unless you supply them yourself via
-`data/manual_signals.json` (see `data/manual_signals.example.json` for the format). Live mode
-persists lifecycle state to `data/state.json` between runs, since each scheduled run is a fresh
-process on a new day.
+without a paid feed or internal telemetry: actor-campaign activity and dark-web mentions.
+Corroborated-indicator findings can be supplied through `data/manual_signals.json` (see
+`data/manual_signals.example.json`), including signals exported by Threat-Ingest. The
+briefing treats them as externally supplied evidence; it does not independently confirm the
+underlying cluster or exposure. Live mode persists lifecycle state to `data/state.json`
+between runs, since each scheduled run is a fresh process on a new day.
 
 By default, only KEV entries added within the last `kev_lookback_days` (30, configurable in
 `config/watchlist.json`) are considered, and only for products you have listed. This keeps a
