@@ -22,9 +22,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Fortinet Multiple Products - Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
         "supports": true,
-        "collected_at": "2026-09-27T15:42:23+00:00",
+        "collected_at": "2026-09-28T18:39:13+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -33,9 +33,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-10",
-        "last_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
         "supports": true,
-        "collected_at": "2026-09-27",
+        "collected_at": "2026-09-28",
         "source_url": null
       },
       {
@@ -66,9 +66,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
         "supports": true,
-        "collected_at": "2026-09-27",
+        "collected_at": "2026-09-28",
         "source_url": null
       }
     ],
@@ -77,8 +77,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-17",
     "first_seen": "2026-09-10",
-    "last_seen": "2026-09-27",
-    "last_evidence_at": "2026-09-27",
+    "last_seen": "2026-09-28",
+    "last_evidence_at": "2026-09-28",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -216,6 +216,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-28",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -242,9 +248,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL VPN, ICA Proxy, CVPN, or RDP Proxy), an unauthenticated remote threat actor may be able to bypass authentication. (added 2026-09-09, remediation due 2026-09-12).",
         "first_observed": "2026-09-09",
-        "last_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
         "supports": true,
-        "collected_at": "2026-09-27T15:42:23+00:00",
+        "collected_at": "2026-09-28T18:39:13+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -253,9 +259,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
         "supports": true,
-        "collected_at": "2026-09-27",
+        "collected_at": "2026-09-28",
         "source_url": null
       },
       {
@@ -275,9 +281,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-11",
-        "last_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
         "supports": true,
-        "collected_at": "2026-09-27",
+        "collected_at": "2026-09-28",
         "source_url": null
       }
     ],
@@ -286,8 +292,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-27",
-    "last_evidence_at": "2026-09-27",
+    "last_seen": "2026-09-28",
+    "last_evidence_at": "2026-09-28",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -419,6 +425,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-28",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -437,7 +449,7 @@
     },
     "severity": "high",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (3 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -489,7 +501,7 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-25",
     "remediation": [],
     "independent_sources": 3,
@@ -640,6 +652,156 @@
         "state": "PENDING_VERIFICATION",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-09-28",
+        "state": "PENDING_VERIFICATION",
+        "score": 50.59,
+        "severity": "high"
+      }
+    ]
+  },
+  "CTI-001:CVE-2026-88771": {
+    "item_id": "CTI-001:CVE-2026-88771",
+    "rule_id": "CTI-001",
+    "title": "Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88771",
+    "subject": "CVE-2026-88771",
+    "score": 50.59,
+    "components": {
+      "base": 70.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.1,
+      "signal_confidence": 0.73,
+      "asset_multiplier": 0.9
+    },
+    "severity": "high",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "cisa_kev",
+        "source_reliability": "A",
+        "confidence": 0.99,
+        "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands. (added 2026-09-27, remediation due 2026-09-30).",
+        "first_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
+        "supports": true,
+        "collected_at": "2026-09-28T18:39:13+00:00",
+        "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "B",
+        "confidence": 0.6,
+        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
+        "first_observed": "2026-09-28",
+        "last_observed": "2026-09-28",
+        "supports": true,
+        "collected_at": "2026-09-28",
+        "source_url": null
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "C",
+        "confidence": 0.6,
+        "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
+        "first_observed": "2026-09-28",
+        "last_observed": "2026-09-28",
+        "supports": true,
+        "collected_at": "2026-09-28",
+        "source_url": null
+      }
+    ],
+    "owner": "research",
+    "action": "Patch or virtually patch within the SLA window; confirm compensating controls until then.",
+    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
+    "deadline": "2026-10-05",
+    "first_seen": "2026-09-28",
+    "last_seen": "2026-09-28",
+    "last_evidence_at": "2026-09-28",
+    "remediation": [],
+    "independent_sources": 3,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-28",
+        "state": "NEW",
+        "score": 50.59,
+        "severity": "high"
+      }
+    ]
+  },
+  "CTI-001:CVE-2026-88772": {
+    "item_id": "CTI-001:CVE-2026-88772",
+    "rule_id": "CTI-001",
+    "title": "Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88772",
+    "subject": "CVE-2026-88772",
+    "score": 50.59,
+    "components": {
+      "base": 70.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.1,
+      "signal_confidence": 0.73,
+      "asset_multiplier": 0.9
+    },
+    "severity": "high",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "cisa_kev",
+        "source_reliability": "A",
+        "confidence": 0.99,
+        "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service (added 2026-09-27, remediation due 2026-09-30).",
+        "first_observed": "2026-09-27",
+        "last_observed": "2026-09-28",
+        "supports": true,
+        "collected_at": "2026-09-28T18:39:13+00:00",
+        "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "B",
+        "confidence": 0.6,
+        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
+        "first_observed": "2026-09-28",
+        "last_observed": "2026-09-28",
+        "supports": true,
+        "collected_at": "2026-09-28",
+        "source_url": null
+      },
+      {
+        "source": "user_watchlist_config",
+        "source_reliability": "C",
+        "confidence": 0.6,
+        "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
+        "first_observed": "2026-09-28",
+        "last_observed": "2026-09-28",
+        "supports": true,
+        "collected_at": "2026-09-28",
+        "source_url": null
+      }
+    ],
+    "owner": "research",
+    "action": "Patch or virtually patch within the SLA window; confirm compensating controls until then.",
+    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
+    "deadline": "2026-10-05",
+    "first_seen": "2026-09-28",
+    "last_seen": "2026-09-28",
+    "last_evidence_at": "2026-09-28",
+    "remediation": [],
+    "independent_sources": 3,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-28",
+        "state": "NEW",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -658,7 +820,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -677,13 +839,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -705,6 +867,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -726,7 +894,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -745,13 +913,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -773,6 +941,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -794,7 +968,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -813,13 +987,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -841,6 +1015,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -862,7 +1042,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -881,13 +1061,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -909,6 +1089,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -930,7 +1116,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -949,13 +1135,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -977,6 +1163,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -998,7 +1190,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1017,13 +1209,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1045,6 +1237,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1066,7 +1264,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1085,13 +1283,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1113,6 +1311,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1134,7 +1338,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1153,13 +1357,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1181,6 +1385,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1202,7 +1412,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1221,13 +1431,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1249,6 +1459,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1270,7 +1486,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1289,13 +1505,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1317,6 +1533,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1338,7 +1560,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1357,13 +1579,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1385,6 +1607,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1406,7 +1634,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1425,13 +1653,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1453,6 +1681,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1474,7 +1708,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1493,13 +1727,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1521,6 +1755,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1542,7 +1782,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 3 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 4 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1561,13 +1801,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1592,6 +1832,12 @@
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
       }
     ]
   },
@@ -1610,7 +1856,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1629,13 +1875,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1657,6 +1903,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1678,7 +1930,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1697,13 +1949,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1725,6 +1977,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1746,7 +2004,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1765,13 +2023,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1793,6 +2051,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1814,7 +2078,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1833,13 +2097,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1861,6 +2125,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1882,7 +2152,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1901,13 +2171,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1929,6 +2199,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -1950,7 +2226,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1969,13 +2245,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -1997,6 +2273,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2018,7 +2300,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2037,13 +2319,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2065,6 +2347,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2086,7 +2374,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2105,13 +2393,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2133,6 +2421,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2154,7 +2448,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2173,13 +2467,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2201,6 +2495,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2222,7 +2522,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2241,13 +2541,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2269,6 +2569,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2290,7 +2596,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2309,13 +2615,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2337,6 +2643,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2358,7 +2670,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2377,13 +2689,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2405,6 +2717,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2426,7 +2744,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2445,13 +2763,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2473,6 +2791,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2494,7 +2818,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2513,13 +2837,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2541,6 +2865,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
@@ -2562,7 +2892,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2581,13 +2911,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2612,6 +2942,12 @@
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
       }
     ]
   },
@@ -2630,7 +2966,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (2 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2649,13 +2985,13 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-09-27",
+    "last_seen": "2026-09-28",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to PENDING_VERIFICATION",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2677,6 +3013,12 @@
       },
       {
         "day": "2026-09-27",
+        "state": "PENDING_VERIFICATION",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-09-28",
         "state": "PENDING_VERIFICATION",
         "score": 5.25,
         "severity": "low"
