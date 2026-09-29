@@ -24,7 +24,7 @@
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-29",
         "supports": true,
-        "collected_at": "2026-09-29T16:55:52+00:00",
+        "collected_at": "2026-09-29T22:51:41+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -212,13 +212,7 @@
         "severity": "high"
       },
       {
-        "day": "2026-09-27",
-        "state": "UNCHANGED",
-        "score": 50.59,
-        "severity": "high"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
@@ -256,7 +250,7 @@
         "first_observed": "2026-09-09",
         "last_observed": "2026-09-29",
         "supports": true,
-        "collected_at": "2026-09-29T16:55:52+00:00",
+        "collected_at": "2026-09-29T22:51:41+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -427,13 +421,7 @@
         "severity": "high"
       },
       {
-        "day": "2026-09-27",
-        "state": "UNCHANGED",
-        "score": 50.59,
-        "severity": "high"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
@@ -660,13 +648,7 @@
         "severity": "high"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 50.59,
-        "severity": "high"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "PENDING_VERIFICATION",
         "score": 50.59,
         "severity": "high"
@@ -684,15 +666,15 @@
     "rule_id": "CTI-001",
     "title": "Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88771",
     "subject": "CVE-2026-88771",
-    "score": 49.12,
+    "score": 50.59,
     "components": {
       "base": 70.0,
       "amplifier_factor": 1.0,
-      "source_confidence": 1.15,
-      "signal_confidence": 0.678,
+      "source_confidence": 1.1,
+      "signal_confidence": 0.73,
       "asset_multiplier": 0.9
     },
-    "severity": "medium",
+    "severity": "high",
     "state": "UNCHANGED",
     "change": "No material change since the previous briefing.",
     "evidence": [
@@ -704,7 +686,7 @@
         "first_observed": "2026-09-27",
         "last_observed": "2026-09-29",
         "supports": true,
-        "collected_at": "2026-09-29T16:55:52+00:00",
+        "collected_at": "2026-09-29T22:51:41+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -712,7 +694,7 @@
         "source_reliability": "B",
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-28",
+        "first_observed": "2026-09-29",
         "last_observed": "2026-09-29",
         "supports": true,
         "collected_at": "2026-09-29",
@@ -723,7 +705,7 @@
         "source_reliability": "C",
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
-        "first_observed": "2026-09-28",
+        "first_observed": "2026-09-29",
         "last_observed": "2026-09-29",
         "supports": true,
         "collected_at": "2026-09-29",
@@ -733,18 +715,18 @@
     "owner": "research",
     "action": "Patch or virtually patch within the SLA window; confirm compensating controls until then.",
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-05",
-    "first_seen": "2026-09-28",
+    "deadline": "2026-10-06",
+    "first_seen": "2026-09-29",
     "last_seen": "2026-09-29",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
-    "independent_sources": 5,
+    "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
     "reportable_reason": "state changed to UNCHANGED",
     "history": [
       {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "NEW",
         "score": 50.59,
         "severity": "high"
@@ -752,8 +734,8 @@
       {
         "day": "2026-09-29",
         "state": "UNCHANGED",
-        "score": 49.12,
-        "severity": "medium"
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -762,15 +744,15 @@
     "rule_id": "CTI-001",
     "title": "Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88772",
     "subject": "CVE-2026-88772",
-    "score": 49.12,
+    "score": 50.59,
     "components": {
       "base": 70.0,
       "amplifier_factor": 1.0,
-      "source_confidence": 1.15,
-      "signal_confidence": 0.678,
+      "source_confidence": 1.1,
+      "signal_confidence": 0.73,
       "asset_multiplier": 0.9
     },
-    "severity": "medium",
+    "severity": "high",
     "state": "UNCHANGED",
     "change": "No material change since the previous briefing.",
     "evidence": [
@@ -782,7 +764,7 @@
         "first_observed": "2026-09-27",
         "last_observed": "2026-09-29",
         "supports": true,
-        "collected_at": "2026-09-29T16:55:52+00:00",
+        "collected_at": "2026-09-29T22:51:41+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -790,7 +772,7 @@
         "source_reliability": "B",
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-28",
+        "first_observed": "2026-09-29",
         "last_observed": "2026-09-29",
         "supports": true,
         "collected_at": "2026-09-29",
@@ -801,7 +783,7 @@
         "source_reliability": "C",
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
-        "first_observed": "2026-09-28",
+        "first_observed": "2026-09-29",
         "last_observed": "2026-09-29",
         "supports": true,
         "collected_at": "2026-09-29",
@@ -811,18 +793,18 @@
     "owner": "research",
     "action": "Patch or virtually patch within the SLA window; confirm compensating controls until then.",
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-05",
-    "first_seen": "2026-09-28",
+    "deadline": "2026-10-06",
+    "first_seen": "2026-09-29",
     "last_seen": "2026-09-29",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
-    "independent_sources": 5,
+    "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
     "reportable_reason": "state changed to UNCHANGED",
     "history": [
       {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "NEW",
         "score": 50.59,
         "severity": "high"
@@ -830,496 +812,8 @@
       {
         "day": "2026-09-29",
         "state": "UNCHANGED",
-        "score": 49.12,
-        "severity": "medium"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88773": {
-    "item_id": "CTI-005:CVE-2026-88773",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88773",
-    "subject": "CVE-2026-88773",
-    "score": 28.35,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.05,
-      "signal_confidence": 0.75,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88773, CVSS 10.0. Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before ",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88773"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 2,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 28.35,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88774": {
-    "item_id": "CTI-005:CVE-2026-88774",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88774",
-    "subject": "CVE-2026-88774",
-    "score": 28.35,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.05,
-      "signal_confidence": 0.75,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88774, CVSS 7.2. Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gatewa",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88774"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 2,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 28.35,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88775": {
-    "item_id": "CTI-005:CVE-2026-88775",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88775",
-    "subject": "CVE-2026-88775",
-    "score": 28.35,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.05,
-      "signal_confidence": 0.75,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88775, CVSS 9.8. Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS a",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88775"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 2,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 28.35,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88776": {
-    "item_id": "CTI-005:CVE-2026-88776",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88776",
-    "subject": "CVE-2026-88776",
-    "score": 28.35,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.05,
-      "signal_confidence": 0.75,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88776, CVSS 9.8. Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88776"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 2,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 28.35,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88777": {
-    "item_id": "CTI-005:CVE-2026-88777",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88777",
-    "subject": "CVE-2026-88777",
-    "score": 28.35,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.05,
-      "signal_confidence": 0.75,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88777, CVSS 9.8. Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88777"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 2,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 28.35,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88778": {
-    "item_id": "CTI-005:CVE-2026-88778",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88778",
-    "subject": "CVE-2026-88778",
-    "score": 28.35,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.05,
-      "signal_confidence": 0.75,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88778, CVSS 7.5. Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, ",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88778"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 2,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 28.35,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88771": {
-    "item_id": "CTI-005:CVE-2026-88771",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88771",
-    "subject": "CVE-2026-88771",
-    "score": 27.72,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.1,
-      "signal_confidence": 0.7,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88771, CVSS 9.8. Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88771"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 3,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 27.72,
-        "severity": "low"
-      }
-    ]
-  },
-  "CTI-005:CVE-2026-88772": {
-    "item_id": "CTI-005:CVE-2026-88772",
-    "rule_id": "CTI-005",
-    "title": "Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88772",
-    "subject": "CVE-2026-88772",
-    "score": 27.72,
-    "components": {
-      "base": 40.0,
-      "amplifier_factor": 1.0,
-      "source_confidence": 1.1,
-      "signal_confidence": 0.7,
-      "asset_multiplier": 0.9
-    },
-    "severity": "low",
-    "state": "NEW",
-    "change": "First observed.",
-    "evidence": [
-      {
-        "source": "nvd",
-        "source_reliability": "A",
-        "confidence": 0.9,
-        "statement": "NVD: CVE-2026-88772, CVSS 8.1. Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gatewa",
-        "first_observed": "2026-09-27",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29T16:55:53+00:00",
-        "source_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88772"
-      },
-      {
-        "source": "user_watchlist_config",
-        "source_reliability": "B",
-        "confidence": 0.6,
-        "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
-        "first_observed": "2026-09-29",
-        "last_observed": "2026-09-29",
-        "supports": true,
-        "collected_at": "2026-09-29",
-        "source_url": null
-      }
-    ],
-    "owner": "research",
-    "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
-    "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
-    "deadline": "2026-10-29",
-    "first_seen": "2026-09-29",
-    "last_seen": "2026-09-29",
-    "last_evidence_at": "2026-09-29",
-    "remediation": [],
-    "independent_sources": 3,
-    "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to NEW",
-    "history": [
-      {
-        "day": "2026-09-29",
-        "state": "NEW",
-        "score": 27.72,
-        "severity": "low"
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -1384,13 +878,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1464,13 +952,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1544,13 +1026,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1624,13 +1100,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1704,13 +1174,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1784,13 +1248,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1864,13 +1322,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -1944,13 +1396,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2024,13 +1470,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2104,13 +1544,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2184,13 +1618,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2264,13 +1692,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2344,13 +1766,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2424,13 +1840,7 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "STALE",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
+        "day": "2026-09-29",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2482,8 +1892,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2504,14 +1914,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -2562,8 +1966,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2584,14 +1988,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -2642,8 +2040,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2664,14 +2062,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -2722,8 +2114,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2744,14 +2136,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -2802,8 +2188,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2824,14 +2210,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -2882,8 +2262,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2904,14 +2284,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -2962,8 +2336,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -2984,14 +2358,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3042,8 +2410,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3064,14 +2432,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3122,8 +2484,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3144,14 +2506,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3202,8 +2558,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3224,14 +2580,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3282,8 +2632,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3304,14 +2654,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3362,8 +2706,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3384,14 +2728,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3442,8 +2780,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3464,14 +2802,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3522,8 +2854,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3544,14 +2876,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3602,8 +2928,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3624,14 +2950,8 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
@@ -3682,8 +3002,8 @@
     "remediation": [],
     "independent_sources": 1,
     "circular_reporting": false,
-    "suppressed": false,
-    "reportable_reason": "state changed to STALE",
+    "suppressed": true,
+    "reportable_reason": "no material change",
     "history": [
       {
         "day": "2026-09-24",
@@ -3704,20 +3024,664 @@
         "severity": "low"
       },
       {
-        "day": "2026-09-27",
-        "state": "PENDING_VERIFICATION",
-        "score": 5.25,
-        "severity": "low"
-      },
-      {
-        "day": "2026-09-28",
-        "state": "PENDING_VERIFICATION",
+        "day": "2026-09-29",
+        "state": "STALE",
         "score": 5.25,
         "severity": "low"
       },
       {
         "day": "2026-09-29",
         "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:1.14.100.25": {
+    "item_id": "CTI-006:1.14.100.25",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 1.14.100.25",
+    "subject": "1.14.100.25",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 1.14.100.25: ASN=AS45090; network=TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited; country=CN; tags=FRPS, HTTP, MYSQL, OPENVPN; resolved_ips=1.14.100.25; TLS fingerprints=c63c1822a564a1e6f7483f6bc20e5105e9e3c0818ab9c98ae372e3d753771cc5, d8df8a4a64ecf6094fd09b928751376f7dc5246182bd422338f6fe1b8ef64995; open_ports=443, 1194, 3306, 7000, 18080; service_count=6. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:103.42.30.245": {
+    "item_id": "CTI-006:103.42.30.245",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 103.42.30.245",
+    "subject": "103.42.30.245",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 103.42.30.245: ASN=AS62468; network=HKCLOUDX - VpsQuan L.L.C.; country=HK; tags=DCERPC, HTTP, SMB, UNKNOWN; resolved_ips=103.42.30.245; related_domains=usdt888.club, winapp.work; TLS fingerprints=372eea056604a6dcd33cc585789e7a314125d80f32cd31be3cc14195e8ecd512; open_ports=135, 139, 445, 5357, 8020, 8027, 8383, 8443; service_count=8. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:120.46.128.236": {
+    "item_id": "CTI-006:120.46.128.236",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 120.46.128.236",
+    "subject": "120.46.128.236",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 120.46.128.236: ASN=AS55990; network=HWCSNET - Huawei Cloud Service data center; country=CN; tags=HTTP, SSH; resolved_ips=120.46.128.236; open_ports=22, 3000, 8100, 9000, 9001; service_count=5. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:130.94.29.211": {
+    "item_id": "CTI-006:130.94.29.211",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 130.94.29.211",
+    "subject": "130.94.29.211",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 130.94.29.211: ASN=AS154177; network=LIGHT4-AS-AP - LIGHT NODE LIMITED; country=KR; tags=DNS, HTTP, MYSQL, SSH; resolved_ips=130.94.29.211; TLS fingerprints=58e429f0a00f76931da8488aee9bd0e62f03066388991811b7db4b1461923874; open_ports=22, 53, 80, 443, 888, 3306, 8080, 8088, 8090, 8888, 9999; service_count=11. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:139.99.88.62": {
+    "item_id": "CTI-006:139.99.88.62",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 139.99.88.62",
+    "subject": "139.99.88.62",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 139.99.88.62: ASN=AS16276; network=OVH - OVH SAS; country=SG; tags=HTTP, SSH; resolved_ips=139.99.88.62; related_domains=62.ip-139-99-88.net, vps-e95c3321.vps.ovh.ca; open_ports=22, 8080; service_count=2. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:155.103.71.233": {
+    "item_id": "CTI-006:155.103.71.233",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 155.103.71.233",
+    "subject": "155.103.71.233",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 155.103.71.233: ASN=AS44382; network=WhiteLabel - Fiba Cloud Operation Company, LLC; country=TR; resolved_ips=155.103.71.233; service_count=0. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:162.14.107.40": {
+    "item_id": "CTI-006:162.14.107.40",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 162.14.107.40",
+    "subject": "162.14.107.40",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 162.14.107.40: ASN=AS45090; network=TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited; country=CN; tags=HTTP; resolved_ips=162.14.107.40; open_ports=8082; service_count=1. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:23.159.160.195": {
+    "item_id": "CTI-006:23.159.160.195",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 23.159.160.195",
+    "subject": "23.159.160.195",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 23.159.160.195: ASN=AS26548; network=PUREVOLTAGE-INC - PureVoltage Hosting Inc.; country=US; tags=HTTP; resolved_ips=23.159.160.195; open_ports=8888; service_count=1. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:43.173.38.253": {
+    "item_id": "CTI-006:43.173.38.253",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 43.173.38.253",
+    "subject": "43.173.38.253",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 43.173.38.253: ASN=AS132203; network=TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue; country=ID; resolved_ips=43.173.38.253; service_count=0. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:45.76.110.248": {
+    "item_id": "CTI-006:45.76.110.248",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 45.76.110.248",
+    "subject": "45.76.110.248",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 45.76.110.248: ASN=AS20473; network=AS-VULTR - The Constant Company, LLC; country=JP; tags=HTTP, SSH; resolved_ips=45.76.110.248; related_domains=tokyo.getallnodes.com; open_ports=22, 443, 8082, 8084; service_count=4. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:64.118.132.68": {
+    "item_id": "CTI-006:64.118.132.68",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 64.118.132.68",
+    "subject": "64.118.132.68",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 64.118.132.68: ASN=AS138997; network=EDCL-AS-AP - Eons Data Communications Limited; country=HK; tags=HTTP, SSH, UNKNOWN; resolved_ips=64.118.132.68; open_ports=22, 8082, 8083, 44321, 44322, 44323; service_count=6. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:89.106.83.156": {
+    "item_id": "CTI-006:89.106.83.156",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 89.106.83.156",
+    "subject": "89.106.83.156",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 89.106.83.156: ASN=AS200051; network=VPSLab-Networks - RIZKI ABDUL AZIS; country=DE; tags=DCERPC, HTTP, RDP, SMB, UNKNOWN, WINRM; resolved_ips=89.106.83.156; TLS fingerprints=9f73a80b2d9c8059a7e19ba1f0156ac6d3b775625e9b1f5e322ba1bc4a99dd09; open_ports=135, 139, 445, 3389, 5985, 47001; service_count=6. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
+        "score": 5.25,
+        "severity": "low"
+      }
+    ]
+  },
+  "CTI-006:93.177.77.234": {
+    "item_id": "CTI-006:93.177.77.234",
+    "rule_id": "CTI-006",
+    "title": "Infrastructure enrichment observed for an indicator: 93.177.77.234",
+    "subject": "93.177.77.234",
+    "score": 5.25,
+    "components": {
+      "base": 15.0,
+      "amplifier_factor": 1.0,
+      "source_confidence": 1.0,
+      "signal_confidence": 0.35,
+      "asset_multiplier": 1.0
+    },
+    "severity": "low",
+    "state": "NEW",
+    "change": "First observed.",
+    "evidence": [
+      {
+        "source": "threat-ingest-censys",
+        "source_reliability": "C",
+        "confidence": 0.35,
+        "statement": "censys enrichment context for 93.177.77.234: ASN=AS55933; network=CLOUDIE-AS-AP - Cloudie Limited; country=HK; tags=HTTP; resolved_ips=93.177.77.234; related_domains=jutbh.my, se123.b28a8.cyou, sjytd.win, yy11.win, yy16.my; TLS fingerprints=cf93931ecbc1db8a6c170a718b52e37cb017bc1f96cc247f14528b5632594709; open_ports=443, 8080, 9000, 18080; service_count=4. Context only; this observation alone does not establish maliciousness.",
+        "first_observed": "2026-09-26",
+        "last_observed": "2026-09-29",
+        "supports": true,
+        "collected_at": "2026-09-29T22:50:23+00:00",
+        "source_url": null
+      }
+    ],
+    "owner": "Unassigned (synthetic)",
+    "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+    "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    "deadline": "2026-10-29",
+    "first_seen": "2026-09-29",
+    "last_seen": "2026-09-29",
+    "last_evidence_at": "2026-09-29",
+    "remediation": [],
+    "independent_sources": 1,
+    "circular_reporting": false,
+    "suppressed": false,
+    "reportable_reason": "state changed to NEW",
+    "history": [
+      {
+        "day": "2026-09-29",
+        "state": "NEW",
         "score": 5.25,
         "severity": "low"
       }

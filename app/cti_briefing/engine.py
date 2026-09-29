@@ -58,6 +58,13 @@ RULES: dict[str, dict[str, Any]] = {
         "action": "Prioritize patching ahead of public exploitation; track KEV status daily.",
         "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     },
+    "CTI-006": {
+        "title": "Infrastructure enrichment observed for an indicator",
+        "required": {"infrastructure_observation"},
+        "base": 15.0,
+        "action": "Review the provider context and correlate it with independent telemetry before taking action.",
+        "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
+    },
 }
 
 MATERIAL_SCORE_DELTA = 3.0

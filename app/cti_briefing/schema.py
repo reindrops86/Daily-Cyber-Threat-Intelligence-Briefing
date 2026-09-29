@@ -24,9 +24,11 @@ LIVE_BANNER = (
     "relevance and environment reachability are self-declared by the analyst "
     "in config/watchlist.json and are not independently verified -- edit that "
     "file to match your real environment before relying on this report. "
-    "Actor-campaign, dark-web, and corroborated-indicator findings do not "
-    "appear here unless supplied via data/manual_signals.json; this project "
-    "has no live source for those signal types."
+    "Infrastructure clusters, direct KEV exposure observations, and provider "
+    "enrichment context may be supplied through data/manual_signals.json by "
+    "Threat-Ingest. Imported provider context is evidence for analyst review, "
+    "not an independent verdict of maliciousness. Actor-campaign and dark-web "
+    "findings are unavailable unless supplied by an analyst."
 )
 
 # Reserved, non-routable ranges (RFC 5737 / RFC 2606) so no fixture can be
@@ -60,6 +62,7 @@ SIGNAL_TTL_DAYS = {
     "sector_targeting": 30,
     "environment_reachable": 3650,
     "dark_web_mention": 1,
+    "infrastructure_observation": 3,
 }
 DEFAULT_SIGNAL_TTL_DAYS = 7
 
