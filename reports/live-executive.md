@@ -1,4 +1,4 @@
-# Executive Summary - 2026-09-30
+# Executive Summary - 2026-10-01
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -18,8 +18,8 @@ _Nothing resolved with verified remediation evidence in this briefing._
 
 Suppressed findings are not deleted. They remain tracked with full history so that if a suppressed finding's severity rises, its evidence changes, its deadline passes, or it is mitigated or reopens, it reappears in the very next briefing without having lost its record.
 
-30 unchanged, low/medium-severity finding(s) suppressed this cycle.
+43 unchanged, low/medium-severity finding(s) suppressed this cycle.
 
 ## Trend
 
-- 2026-09-30: 18 reported, 0 critical, 30 suppressed
+- 2026-10-01: 5 reported, 0 critical, 43 suppressed
