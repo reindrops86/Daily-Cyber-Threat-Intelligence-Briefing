@@ -15,15 +15,19 @@ from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
-from .collectors import CollectionError, fetch_cisa_kev, fetch_recent_high_severity_cves
+from .collectors import (
+    CVE_ID_PATTERN, CollectionError, fetch_cisa_kev, fetch_cvss_scores, fetch_epss_scores,
+    fetch_recent_high_severity_cves,
+)
 from .engine import correlate
 from .quality_gate import gate_passed, render_gate_summary, run_quality_gate
-from .reports import render
-from .schema import AssetContext, DEFAULT_ASSET_CONTEXT, Signal
+from .reports import CVSS_IN_TEXT, render
+from .schema import AssetContext, DEFAULT_ASSET_CONTEXT, Item, Signal
 from .state_store import load_state, save_state
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_WATCHLIST = ROOT / "config" / "watchlist.json"
+DEFAULT_PIRS = ROOT / "config" / "pirs.json"
 DEFAULT_MANUAL_SIGNALS = ROOT / "data" / "manual_signals.json"
 DEFAULT_STATE = ROOT / "data" / "state.json"
 DEFAULT_REPORT_DIR = ROOT / "reports"
@@ -40,6 +44,34 @@ def _load_manual_signals(path: Path) -> list[Signal]:
         return []
     raw = json.loads(path.read_text(encoding="utf-8"))
     return [Signal(**entry) for entry in raw]
+
+
+def _load_pirs(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8")).get("pirs", [])
+
+
+def collect_vuln_intel(
+    items: list[Item], notes: list[str],
+    epss_fetcher=fetch_epss_scores, cvss_fetcher=fetch_cvss_scores,
+) -> dict[str, dict[str, Any]]:
+    """EPSS for every reportable CVE finding, plus NVD CVSS for those whose
+    evidence does not already carry a score (KEV entries do not)."""
+    reportable = [i for i in items if not i.suppressed and CVE_ID_PATTERN.fullmatch(i.subject)]
+    intel: dict[str, dict[str, Any]] = {item.subject: {} for item in reportable}
+    try:
+        for cve, scores in epss_fetcher(intel).items():
+            intel.setdefault(cve, {}).update(scores)
+    except CollectionError as exc:
+        notes.append(f"FIRST EPSS unavailable this run: {exc}")
+    missing_cvss = [
+        item.subject for item in reportable
+        if not any(CVSS_IN_TEXT.search(record.statement) for record in item.evidence)
+    ]
+    for cve, score in cvss_fetcher(missing_cvss).items():
+        intel.setdefault(cve, {})["cvss"] = score
+    return intel
 
 
 def _within_lookback(signal: Signal, today: date, lookback_days: int) -> bool:
@@ -110,6 +142,7 @@ def build_live_signals(
 def run(
     report_dir: Path = DEFAULT_REPORT_DIR, state_path: Path = DEFAULT_STATE,
     watchlist_path: Path = DEFAULT_WATCHLIST, manual_signals_path: Path = DEFAULT_MANUAL_SIGNALS,
+    pirs_path: Path = DEFAULT_PIRS,
 ) -> int:
     report_dir.mkdir(exist_ok=True)
     today = date.today()
@@ -137,6 +170,9 @@ def run(
     items = correlate(live_signals, prior_state, today, asset_lookup)
     save_state(state_path, {item.item_id: item for item in items})
 
+    vuln_intel = collect_vuln_intel(items, collection_notes)
+    pirs = _load_pirs(pirs_path)
+
     history_lines = [f"- {today_iso}: {sum(1 for i in items if not i.suppressed)} reported, "
                       f"{sum(1 for i in items if i.severity == 'critical' and not i.suppressed)} critical, "
                       f"{sum(1 for i in items if i.suppressed)} suppressed"]
@@ -144,7 +180,9 @@ def run(
         history_lines += [f"  (note: {note})" for note in collection_notes]
 
     generated_at = today.isoformat()
-    rendered = render(items, today_iso, generated_at, history_lines, live=True)
+    rendered = render(
+        items, today_iso, generated_at, history_lines, live=True, vuln_intel=vuln_intel, pirs=pirs,
+    )
     gate_results = run_quality_gate(items, rendered, None, live=True)
     gate_summary = render_gate_summary(gate_results)
 

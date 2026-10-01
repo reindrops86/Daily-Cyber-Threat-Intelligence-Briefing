@@ -14,15 +14,19 @@ data/manual_signals.json for how an analyst supplies that evidence themselves.
 from __future__ import annotations
 
 import json
+import re
+import time
 import urllib.error
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
-from typing import Callable
+from typing import Callable, Iterable
 
 from .schema import Signal
 
 KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 NVD_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+EPSS_URL = "https://api.first.org/data/v1/epss"
+CVE_ID_PATTERN = re.compile(r"CVE-\d{4}-\d{4,7}")
 USER_AGENT = "daily-cti-briefing/1.0 (+https://github.com/reindrops86/Daily-Cyber-Threat-Intelligence-Briefing)"
 
 
@@ -117,3 +121,62 @@ def fetch_recent_high_severity_cves(
             source_url=f"https://nvd.nist.gov/vuln/detail/{cve_id}",
         ))
     return signals
+
+
+def _valid_cve_ids(cve_ids: Iterable[str]) -> list[str]:
+    # Only well-formed CVE IDs ever reach a request URL.
+    return sorted({cve for cve in cve_ids if CVE_ID_PATTERN.fullmatch(cve)})
+
+
+def _cvss_from_metrics(metrics: dict) -> float | None:
+    for key in ("cvssMetricV40", "cvssMetricV31", "cvssMetricV30", "cvssMetricV2"):
+        if metrics.get(key):
+            return float(metrics[key][0]["cvssData"]["baseScore"])
+    return None
+
+
+def fetch_epss_scores(
+    cve_ids: Iterable[str], fetch: Callable[[str], dict] = _get_json, batch_size: int = 50,
+) -> dict[str, dict[str, float | str]]:
+    """FIRST.org EPSS: the modelled probability of exploitation activity in
+    the next 30 days, and its percentile among all scored CVEs. Keyless."""
+    ids = _valid_cve_ids(cve_ids)
+    scores: dict[str, dict[str, float | str]] = {}
+    for start in range(0, len(ids), batch_size):
+        payload = fetch(f"{EPSS_URL}?cve={','.join(ids[start:start + batch_size])}")
+        for row in payload.get("data", []):
+            try:
+                scores[row["cve"]] = {
+                    "epss": float(row["epss"]),
+                    "percentile": float(row["percentile"]),
+                    "date": str(row.get("date", "")),
+                }
+            except (KeyError, TypeError, ValueError):
+                continue
+    return scores
+
+
+def fetch_cvss_scores(
+    cve_ids: Iterable[str], fetch: Callable[[str], dict] = _get_json,
+    limit: int = 10, pause_seconds: float = 6.5, sleep: Callable[[float], None] = time.sleep,
+) -> dict[str, float]:
+    """Per-CVE CVSS base score from NVD, for CVEs (such as KEV entries) whose
+    collector did not carry one. Unauthenticated NVD allows roughly five
+    requests per 30 seconds, so calls are paced and capped; a CVE that fails
+    is simply left without a score rather than failing the run."""
+    scores: dict[str, float] = {}
+    for index, cve in enumerate(_valid_cve_ids(cve_ids)[:limit]):
+        if index:
+            sleep(pause_seconds)
+        try:
+            payload = fetch(f"{NVD_URL}?cveId={cve}")
+        except CollectionError:
+            continue
+        for entry in payload.get("vulnerabilities", []):
+            try:
+                score = _cvss_from_metrics(entry.get("cve", {}).get("metrics", {}))
+            except (KeyError, IndexError, TypeError, ValueError):
+                score = None
+            if score is not None:
+                scores[cve] = score
+    return scores

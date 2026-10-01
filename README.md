@@ -93,6 +93,41 @@ independent confirmations. The engine collapses them into a single independent s
 before computing `source_confidence`, and flags the finding as `circular_reporting` so
 an analyst can see that two feeds were not actually independent.
 
+## Evidence labels: fact, telemetry, report, inference, assessment
+
+Every evidence line in the analyst report is labelled with the kind of claim it is, so
+a self-declared judgment or an automated correlation is never read as a published fact:
+
+| Label | Meaning | Examples |
+|---|---|---|
+| Reported fact | Published by an authoritative source | CISA KEV, NVD, vendor advisory |
+| Observed telemetry | Seen directly in the organization's own tooling | EDR, scanner, asset inventory |
+| Third-party report | A feed, sharing group, or monitor's claim, not verified here | commercial feed, ISAC, dark-web monitor |
+| Automated inference | Produced by correlation or provider enrichment; needs analyst review | Threat-Ingest clusters, exposure matches, Censys/GreyNoise/Shodan context |
+| Analyst assessment | A judgment declared by the analyst, not independently verified | `config/watchlist.json` sector and reachability |
+
+## Vulnerability patch priority (KEV + EPSS + CVSS)
+
+In live mode, every reportable CVE finding gets a patch-priority row combining three
+independent signals: CISA KEV membership (exploitation confirmed), FIRST.org EPSS
+(modelled probability of exploitation in the next 30 days, keyless API), and the NVD
+CVSS base score (looked up per CVE, paced for the unauthenticated rate limit, only when
+the finding's own evidence does not already carry one).
+
+- **P1 - patch now:** listed in KEV.
+- **P2 - patch this cycle:** not in KEV, but EPSS >= 0.10 or CVSS >= 9.0.
+- **P3 - scheduled patching:** neither.
+
+The tier is shown alongside the finding score, not folded into it, so the scoring model
+stays auditable. A value that could not be collected is shown as `n/a`, never guessed.
+
+## Priority Intelligence Requirements
+
+`config/pirs.json` defines the standing questions the briefing exists to answer and
+which correlation rules address each one. Every finding lists the PIRs it addresses, and
+the executive summary reports each PIR's status -- including PIRs with no new
+intelligence this cycle, so collection gaps stay visible instead of silent.
+
 ## Asset and business context
 
 Each subject carries an `AssetContext`: owner, internet exposure, production status,
@@ -202,16 +237,19 @@ app/
     quality_gate.py               pre-publish checks (mode-aware)
     reports.py                    analyst / executive / watchlist rendering (mode-aware)
     simulate.py                   five-day synthetic fixture (safe, reserved indicators)
-    collectors.py                 live CISA KEV and NVD fetchers (public, no API key)
-    live.py                       live-mode orchestration: fetch -> correlate -> render
+    collectors.py                 live CISA KEV, NVD, and FIRST EPSS fetchers (public, no API key)
+    live.py                       live-mode orchestration: fetch -> correlate -> enrich -> render
     state_store.py                persists finding state to data/state.json between runs
 config/
   watchlist.json                 EDIT ME: your sector and the products you actually run
+  pirs.json                      EDIT ME: priority intelligence requirements and the rules that answer them
 data/
   manual_signals.example.json    format for analyst-supplied campaign/dark-web/IOC evidence
 tests/
   test_lifecycle.py              state-machine unit tests, incl. the full transition chain
   test_core.py                   integration tests over the demo fixture and quality gate
+  test_live.py                   live collectors and watchlist matching, with fake fetchers
+  test_prioritization.py         EPSS/CVSS collection, patch tiers, evidence labels, PIRs
 reports/                         generated markdown, one set per day plus `latest-*`
 ```
 

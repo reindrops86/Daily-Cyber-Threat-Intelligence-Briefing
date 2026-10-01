@@ -1,0 +1,30 @@
+{
+  "_comment": "Priority Intelligence Requirements. Each PIR is a standing question the briefing exists to answer; 'rule_ids' lists which correlation rules produce findings that address it. A PIR with no reportable finding is shown explicitly as having no new intelligence today, so collection gaps stay visible instead of silent. Edit the questions to match your organization's real requirements.",
+  "pirs": [
+    {
+      "id": "PIR-001",
+      "question": "Which actively exploited vulnerabilities affect products on our watchlist?",
+      "rule_ids": ["CTI-001"]
+    },
+    {
+      "id": "PIR-002",
+      "question": "Which newly disclosed high-severity vulnerabilities affect watched products before exploitation is confirmed?",
+      "rule_ids": ["CTI-005"]
+    },
+    {
+      "id": "PIR-003",
+      "question": "Is any tracked threat actor campaign active in our telemetry?",
+      "rule_ids": ["CTI-002"]
+    },
+    {
+      "id": "PIR-004",
+      "question": "Is our organization or sector being discussed or targeted in underground sources?",
+      "rule_ids": ["CTI-003"]
+    },
+    {
+      "id": "PIR-005",
+      "question": "What malicious infrastructure is corroborated across independent sources, and what provider context exists for it?",
+      "rule_ids": ["CTI-004", "CTI-006"]
+    }
+  ]
+}

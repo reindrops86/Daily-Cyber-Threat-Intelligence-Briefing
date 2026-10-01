@@ -78,6 +78,41 @@ def parse_date(value: str) -> date:
     return date.fromisoformat(value)
 
 
+# Every evidence line is labelled with what kind of claim it is, so a reader
+# never mistakes a self-declared judgment or an automated correlation for a
+# fact published by an authoritative source.
+REPORTED_FACT_SOURCES = {"cisa_kev", "nvd", "vendor_advisory"}
+OBSERVED_TELEMETRY_SOURCES = {"edr_telemetry", "sca_scanner", "asset_inventory", "rescan", "patch_mgmt"}
+THIRD_PARTY_REPORT_SOURCES = {"commercial_feed", "isac_share", "feed_alpha", "feed_beta", "darkweb_monitor"}
+ANALYST_ASSESSMENT_SOURCES = {"user_watchlist_config"}
+
+EVIDENCE_CLASS_LEGEND = (
+    "Evidence labels: Reported fact = published by an authoritative source "
+    "(CISA KEV, NVD, vendor advisory); Observed telemetry = seen directly in "
+    "the organization's own tooling; Third-party report = a feed, sharing "
+    "group, or monitoring service's claim, not verified here; Automated "
+    "inference = produced by correlation or provider enrichment (Threat-Ingest "
+    "clusters, exposure matches, provider context) and requires analyst "
+    "review; Analyst assessment = a judgment declared by the analyst "
+    "(config/watchlist.json, manual entries), not independently verified."
+)
+
+
+def evidence_class(source: str) -> str:
+    base = source.removesuffix("_synth")
+    if base in REPORTED_FACT_SOURCES:
+        return "Reported fact"
+    if base in OBSERVED_TELEMETRY_SOURCES:
+        return "Observed telemetry"
+    if base in THIRD_PARTY_REPORT_SOURCES:
+        return "Third-party report"
+    if base.startswith("threat-ingest"):
+        return "Automated inference"
+    if base in ANALYST_ASSESSMENT_SOURCES or base.startswith(("analyst", "manual")):
+        return "Analyst assessment"
+    return "Unclassified source"
+
+
 @dataclass(frozen=True)
 class Signal:
     """One atomic piece of intelligence, with its own provenance and TTL."""
