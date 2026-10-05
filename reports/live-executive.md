@@ -1,4 +1,4 @@
-# Executive Summary - 2026-10-04
+# Executive Summary - 2026-10-05
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -9,11 +9,12 @@
 - **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-8452 (score 50.59, PENDING_VERIFICATION). Owner: Unassigned (synthetic). Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 - **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88771 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 - **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88772 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
+- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88779 (score 50.59, NEW). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 
 ## Priority Intelligence Requirements
 
-- **PIR-001** Which actively exploited vulnerabilities affect products on our watchlist? -- 5 reportable finding(s); highest: CTI-001:CVE-2025-25249 (high, score 50.59)
-- **PIR-002** Which newly disclosed high-severity vulnerabilities affect watched products before exploitation is confirmed? -- no new intelligence this cycle (collection gap or nothing observed)
+- **PIR-001** Which actively exploited vulnerabilities affect products on our watchlist? -- 6 reportable finding(s); highest: CTI-001:CVE-2025-25249 (high, score 50.59)
+- **PIR-002** Which newly disclosed high-severity vulnerabilities affect watched products before exploitation is confirmed? -- 1 reportable finding(s); highest: CTI-005:CVE-2026-88779 (low, score 28.35)
 - **PIR-003** Is any tracked threat actor campaign active in our telemetry? -- no new intelligence this cycle (collection gap or nothing observed)
 - **PIR-004** Is our organization or sector being discussed or targeted in underground sources? -- no new intelligence this cycle (collection gap or nothing observed)
 - **PIR-005** What malicious infrastructure is corroborated across independent sources, and what provider context exists for it? -- no new intelligence this cycle (collection gap or nothing observed)
@@ -30,4 +31,4 @@ Suppressed findings are not deleted. They remain tracked with full history so th
 
 ## Trend
 
-- 2026-10-04: 5 reported, 0 critical, 43 suppressed
+- 2026-10-05: 7 reported, 0 critical, 43 suppressed
