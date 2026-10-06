@@ -1,4 +1,4 @@
-# Watchlist - 2026-10-05
+# Watchlist - 2026-10-06
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -7,8 +7,8 @@
 - CTI-001:CVE-2026-8452: high, state PENDING_VERIFICATION, score 50.59, owner Unassigned (synthetic), deadline 2026-09-18
 - CTI-001:CVE-2026-88771: high, state UNCHANGED, score 50.59, owner research, deadline 2026-10-06
 - CTI-001:CVE-2026-88772: high, state UNCHANGED, score 50.59, owner research, deadline 2026-10-06
-- CTI-001:CVE-2026-88779: high, state NEW, score 50.59, owner research, deadline 2026-10-12
-- CTI-005:CVE-2026-88779: low, state NEW, score 28.35, owner research, deadline 2026-11-04
+- CTI-001:CVE-2026-88779: high, state UNCHANGED, score 50.59, owner research, deadline 2026-10-12
+- CTI-005:CVE-2026-88779: low, state PENDING_VERIFICATION, score 28.35, owner research, deadline 2026-11-04
 - CTI-004:TI-2026-0002: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
 - CTI-004:TI-2026-0003: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
 - CTI-004:TI-2026-0007: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]

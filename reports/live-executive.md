@@ -1,4 +1,4 @@
-# Executive Summary - 2026-10-05
+# Executive Summary - 2026-10-06
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -9,7 +9,7 @@
 - **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-8452 (score 50.59, PENDING_VERIFICATION). Owner: Unassigned (synthetic). Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 - **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88771 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 - **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88772 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
-- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88779 (score 50.59, NEW). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
+- **HIGH** Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88779 (score 50.59, UNCHANGED). Owner: research. Action: Patch or virtually patch within the SLA window; confirm compensating controls until then.
 
 ## Priority Intelligence Requirements
 
@@ -31,4 +31,4 @@ Suppressed findings are not deleted. They remain tracked with full history so th
 
 ## Trend
 
-- 2026-10-05: 7 reported, 0 critical, 43 suppressed
+- 2026-10-06: 7 reported, 0 critical, 43 suppressed
