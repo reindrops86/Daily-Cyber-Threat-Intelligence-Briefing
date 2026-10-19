@@ -14,7 +14,7 @@
     },
     "severity": "high",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (9 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (10 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -77,7 +77,7 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-17",
     "first_seen": "2026-09-10",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-10-09",
     "remediation": [],
     "independent_sources": 3,
@@ -336,6 +336,12 @@
         "state": "PENDING_VERIFICATION",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "PENDING_VERIFICATION",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -362,9 +368,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Fortinet Multiple Products - FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. (added 2026-10-16, remediation due 2026-10-19).",
         "first_observed": "2026-10-16",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18T14:41:50+00:00",
+        "collected_at": "2026-10-19T17:36:21+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -373,9 +379,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment.",
         "first_observed": "2026-10-17",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       },
       {
@@ -384,9 +390,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-10-17",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       }
     ],
@@ -395,13 +401,13 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-10-24",
     "first_seen": "2026-10-17",
-    "last_seen": "2026-10-18",
-    "last_evidence_at": "2026-10-18",
+    "last_seen": "2026-10-19",
+    "last_evidence_at": "2026-10-19",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
     "suppressed": false,
-    "reportable_reason": "state changed to UNCHANGED",
+    "reportable_reason": "severity requires continued visibility",
     "history": [
       {
         "day": "2026-10-17",
@@ -411,6 +417,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
@@ -440,9 +452,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands. (added 2026-10-13, remediation due 2026-10-16).",
         "first_observed": "2026-10-13",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18T14:41:50+00:00",
+        "collected_at": "2026-10-19T17:36:21+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -451,9 +463,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment.",
         "first_observed": "2026-10-13",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       },
       {
@@ -462,9 +474,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-10-13",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       }
     ],
@@ -473,8 +485,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-10-20",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-10-18",
-    "last_evidence_at": "2026-10-18",
+    "last_seen": "2026-10-19",
+    "last_evidence_at": "2026-10-19",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -516,6 +528,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -534,7 +552,7 @@
     },
     "severity": "high",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (9 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (10 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -586,7 +604,7 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-10-09",
     "remediation": [],
     "independent_sources": 3,
@@ -839,6 +857,12 @@
         "state": "PENDING_VERIFICATION",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "PENDING_VERIFICATION",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -857,7 +881,7 @@
     },
     "severity": "high",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (23 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (24 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "cisa_kev",
@@ -909,7 +933,7 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-09-18",
     "first_seen": "2026-09-11",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-25",
     "remediation": [],
     "independent_sources": 3,
@@ -1180,6 +1204,12 @@
         "state": "PENDING_VERIFICATION",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "PENDING_VERIFICATION",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -1206,9 +1236,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands. (added 2026-09-27, remediation due 2026-09-30).",
         "first_observed": "2026-09-27",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18T14:41:50+00:00",
+        "collected_at": "2026-10-19T17:36:21+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -1217,9 +1247,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-29",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       },
       {
@@ -1228,9 +1258,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-29",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       }
     ],
@@ -1239,8 +1269,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-10-06",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
-    "last_evidence_at": "2026-10-18",
+    "last_seen": "2026-10-19",
+    "last_evidence_at": "2026-10-19",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -1369,6 +1399,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
@@ -1398,9 +1434,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service (added 2026-09-27, remediation due 2026-09-30).",
         "first_observed": "2026-09-27",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18T14:41:50+00:00",
+        "collected_at": "2026-10-19T17:36:21+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -1409,9 +1445,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-09-29",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       },
       {
@@ -1420,9 +1456,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-09-29",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       }
     ],
@@ -1431,8 +1467,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-10-06",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
-    "last_evidence_at": "2026-10-18",
+    "last_seen": "2026-10-19",
+    "last_evidence_at": "2026-10-19",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -1564,6 +1600,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -1590,9 +1632,9 @@
         "confidence": 0.99,
         "statement": "CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. (added 2026-10-04, remediation due 2026-10-07).",
         "first_observed": "2026-10-04",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18T14:41:50+00:00",
+        "collected_at": "2026-10-19T17:36:21+00:00",
         "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
       },
       {
@@ -1601,9 +1643,9 @@
         "confidence": 0.6,
         "statement": "Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment.",
         "first_observed": "2026-10-05",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       },
       {
@@ -1612,9 +1654,9 @@
         "confidence": 0.6,
         "statement": "Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated.",
         "first_observed": "2026-10-05",
-        "last_observed": "2026-10-18",
+        "last_observed": "2026-10-19",
         "supports": true,
-        "collected_at": "2026-10-18",
+        "collected_at": "2026-10-19",
         "source_url": null
       }
     ],
@@ -1623,8 +1665,8 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-10-12",
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-18",
-    "last_evidence_at": "2026-10-18",
+    "last_seen": "2026-10-19",
+    "last_evidence_at": "2026-10-19",
     "remediation": [],
     "independent_sources": 3,
     "circular_reporting": false,
@@ -1714,6 +1756,12 @@
         "state": "UNCHANGED",
         "score": 50.59,
         "severity": "high"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "UNCHANGED",
+        "score": 50.59,
+        "severity": "high"
       }
     ]
   },
@@ -1732,7 +1780,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (3 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (4 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "nvd",
@@ -1762,7 +1810,7 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-11-14",
     "first_seen": "2026-10-15",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-10-15",
     "remediation": [],
     "independent_sources": 2,
@@ -1793,6 +1841,12 @@
         "state": "PENDING_VERIFICATION",
         "score": 28.35,
         "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "PENDING_VERIFICATION",
+        "score": 28.35,
+        "severity": "low"
       }
     ]
   },
@@ -1811,7 +1865,7 @@
     },
     "severity": "low",
     "state": "PENDING_VERIFICATION",
-    "change": "No supporting evidence today (13 day(s) since last observed); not yet treated as reduced risk.",
+    "change": "No supporting evidence today (14 day(s) since last observed); not yet treated as reduced risk.",
     "evidence": [
       {
         "source": "nvd",
@@ -1841,7 +1895,7 @@
     "verification_method": "Re-scan the asset and confirm the vulnerability signature is no longer detected.",
     "deadline": "2026-11-04",
     "first_seen": "2026-10-05",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-10-05",
     "remediation": [],
     "independent_sources": 2,
@@ -1932,6 +1986,12 @@
         "state": "PENDING_VERIFICATION",
         "score": 28.35,
         "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "PENDING_VERIFICATION",
+        "score": 28.35,
+        "severity": "low"
       }
     ]
   },
@@ -1950,7 +2010,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -1969,7 +2029,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -2117,6 +2177,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2138,7 +2204,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2157,7 +2223,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -2305,6 +2371,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2326,7 +2398,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2345,7 +2417,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -2493,6 +2565,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2514,7 +2592,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2533,7 +2611,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -2681,6 +2759,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2702,7 +2786,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2721,7 +2805,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -2869,6 +2953,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -2890,7 +2980,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -2909,7 +2999,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -3057,6 +3147,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -3078,7 +3174,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -3097,7 +3193,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -3245,6 +3341,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -3266,7 +3368,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -3285,7 +3387,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -3433,6 +3535,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -3454,7 +3562,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -3473,7 +3581,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -3621,6 +3729,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -3642,7 +3756,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -3661,7 +3775,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -3809,6 +3923,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -3830,7 +3950,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -3849,7 +3969,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -3997,6 +4117,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -4018,7 +4144,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -4037,7 +4163,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -4185,6 +4311,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -4206,7 +4338,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -4225,7 +4357,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -4373,6 +4505,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -4394,7 +4532,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 24 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 25 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -4413,7 +4551,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-24",
     "remediation": [],
     "independent_sources": 1,
@@ -4564,6 +4702,12 @@
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
       }
     ]
   },
@@ -4582,7 +4726,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -4601,7 +4745,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -4749,6 +4893,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -4770,7 +4920,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -4789,7 +4939,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -4937,6 +5087,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -4958,7 +5114,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -4977,7 +5133,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -5125,6 +5281,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -5146,7 +5308,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -5165,7 +5327,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -5313,6 +5475,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -5334,7 +5502,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -5353,7 +5521,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -5501,6 +5669,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -5522,7 +5696,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -5541,7 +5715,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -5689,6 +5863,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -5710,7 +5890,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -5729,7 +5909,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -5877,6 +6057,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -5898,7 +6084,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -5917,7 +6103,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -6065,6 +6251,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -6086,7 +6278,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -6105,7 +6297,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -6253,6 +6445,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -6274,7 +6472,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -6293,7 +6491,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -6441,6 +6639,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -6462,7 +6666,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -6481,7 +6685,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -6629,6 +6833,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -6650,7 +6860,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -6669,7 +6879,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -6817,6 +7027,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -6838,7 +7054,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -6857,7 +7073,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -7005,6 +7221,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -7026,7 +7248,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -7045,7 +7267,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -7193,6 +7415,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -7214,7 +7442,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -7233,7 +7461,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -7381,6 +7609,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -7402,7 +7636,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 22 day(s), past the 2-day freshness window for this finding type.",
+    "change": "No supporting evidence for 23 day(s), past the 2-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-cluster",
@@ -7421,7 +7655,7 @@
     "verification_method": "Confirm the indicator no longer appears in egress or DNS telemetry after blocking.",
     "deadline": "2026-10-24",
     "first_seen": "2026-09-24",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-26",
     "remediation": [],
     "independent_sources": 1,
@@ -7572,6 +7806,12 @@
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
       }
     ]
   },
@@ -7590,7 +7830,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -7609,7 +7849,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -7733,6 +7973,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -7754,7 +8000,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -7773,7 +8019,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -7897,6 +8143,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -7918,7 +8170,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -7937,7 +8189,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -8061,6 +8313,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -8082,7 +8340,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -8101,7 +8359,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -8225,6 +8483,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -8246,7 +8510,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -8265,7 +8529,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -8389,6 +8653,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -8410,7 +8680,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -8429,7 +8699,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -8553,6 +8823,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -8574,7 +8850,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -8593,7 +8869,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -8717,6 +8993,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -8738,7 +9020,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -8757,7 +9039,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -8881,6 +9163,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -8902,7 +9190,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -8921,7 +9209,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -9045,6 +9333,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -9066,7 +9360,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -9085,7 +9379,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -9209,6 +9503,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -9230,7 +9530,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -9249,7 +9549,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -9373,6 +9673,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -9394,7 +9700,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -9413,7 +9719,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -9537,6 +9843,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
@@ -9558,7 +9870,7 @@
     },
     "severity": "low",
     "state": "STALE",
-    "change": "No supporting evidence for 19 day(s), past the 3-day freshness window for this finding type.",
+    "change": "No supporting evidence for 20 day(s), past the 3-day freshness window for this finding type.",
     "evidence": [
       {
         "source": "threat-ingest-censys",
@@ -9577,7 +9889,7 @@
     "verification_method": "Re-query the provider and compare its latest observation; absence alone is not remediation.",
     "deadline": "2026-10-29",
     "first_seen": "2026-09-29",
-    "last_seen": "2026-10-18",
+    "last_seen": "2026-10-19",
     "last_evidence_at": "2026-09-29",
     "remediation": [],
     "independent_sources": 1,
@@ -9701,6 +10013,12 @@
       },
       {
         "day": "2026-10-18",
+        "state": "STALE",
+        "score": 5.25,
+        "severity": "low"
+      },
+      {
+        "day": "2026-10-19",
         "state": "STALE",
         "score": 5.25,
         "severity": "low"
