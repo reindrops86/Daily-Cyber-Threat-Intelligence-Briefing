@@ -1,4 +1,4 @@
-# Watchlist - 2026-10-24
+# Watchlist - 2026-10-25
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -12,36 +12,36 @@
 - CTI-001:CVE-2026-88779: high, state UNCHANGED, score 50.59, owner research, deadline 2026-10-12
 - CTI-005:CVE-2026-104935: low, state PENDING_VERIFICATION, score 28.35, owner research, deadline 2026-11-14 [suppressed this cycle]
 - CTI-005:CVE-2026-88779: low, state PENDING_VERIFICATION, score 28.35, owner research, deadline 2026-11-04 [suppressed this cycle]
-- CTI-004:TI-2026-0002: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0003: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0007: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0016: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0019: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0020: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0021: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0022: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0023: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0025: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0026: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0028: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0029: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0031: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0048: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0049: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0050: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0051: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0052: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0053: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0054: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0055: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0056: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0057: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0058: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0059: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0060: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0061: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0062: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
-- CTI-004:TI-2026-0063: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24 [suppressed this cycle]
+- CTI-004:TI-2026-0002: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0003: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0007: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0016: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0019: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0020: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0021: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0022: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0023: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0025: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0026: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0028: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0029: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0031: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0048: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0049: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0050: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0051: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0052: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0053: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0054: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0055: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0056: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0057: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0058: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0059: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0060: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0061: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0062: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
+- CTI-004:TI-2026-0063: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-24
 - CTI-006:1.14.100.25: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-29 [suppressed this cycle]
 - CTI-006:103.42.30.245: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-29 [suppressed this cycle]
 - CTI-006:120.46.128.236: low, state STALE, score 5.25, owner Unassigned (synthetic), deadline 2026-10-29 [suppressed this cycle]
