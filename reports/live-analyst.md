@@ -1,6 +1,6 @@
-# Analyst Briefing - 2026-10-27
+# Analyst Briefing - 2026-10-28
 
-**Generated:** 2026-10-27
+**Generated:** 2026-10-28
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -27,7 +27,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2025-25249 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-09, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (18 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (19 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -50,9 +50,9 @@ _Patch priority combines three independent signals and is shown alongside, not f
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
 **Evidence:**
-- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Fortinet Multiple Products - FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. (added 2026-10-16, remediation due 2026-10-19). (first seen 2026-10-16, last seen 2026-10-27; source date 2026-10-16; collected 2026-10-27T16:44:51+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
-- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment. (first seen 2026-10-17, last seen 2026-10-27; source date 2026-10-17; collected 2026-10-27)
-- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-17, last seen 2026-10-27; source date 2026-10-17; collected 2026-10-27)
+- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Fortinet Multiple Products - FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. (added 2026-10-16, remediation due 2026-10-19). (first seen 2026-10-16, last seen 2026-10-28; source date 2026-10-16; collected 2026-10-28T17:13:20+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
+- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'fortios'). Edit that file to reflect your real environment. (first seen 2026-10-17, last seen 2026-10-28; source date 2026-10-17; collected 2026-10-28)
+- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'fortios' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-17, last seen 2026-10-28; source date 2026-10-17; collected 2026-10-28)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
 **Owner:** research | **Deadline:** 2026-10-24 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
@@ -65,16 +65,16 @@ _Patch priority combines three independent signals and is shown alongside, not f
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
 **Evidence:**
-- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands. (added 2026-10-13, remediation due 2026-10-16). (first seen 2026-10-13, last seen 2026-10-27; source date 2026-10-13; collected 2026-10-27T16:44:51+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
-- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment. (first seen 2026-10-13, last seen 2026-10-27; source date 2026-10-13; collected 2026-10-27)
-- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-13, last seen 2026-10-27; source date 2026-10-13; collected 2026-10-27)
+- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands. (added 2026-10-13, remediation due 2026-10-16). (first seen 2026-10-13, last seen 2026-10-28; source date 2026-10-13; collected 2026-10-28T17:13:20+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
+- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment. (first seen 2026-10-13, last seen 2026-10-28; source date 2026-10-13; collected 2026-10-28)
+- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-13, last seen 2026-10-28; source date 2026-10-13; collected 2026-10-28)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
 **Owner:** research | **Deadline:** 2026-10-20 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
 
 ## CTI-001:CVE-2026-19490 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-19490
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-09, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (18 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (19 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -90,7 +90,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2026-8452 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-8452
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-09-25, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (32 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (33 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -105,9 +105,9 @@ _Patch priority combines three independent signals and is shown alongside, not f
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
 
 ## CTI-001:CVE-2026-88771 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88771
-**Severity:** high | **Score:** 50.59 | **State:** UNCHANGED
-**What changed:** No material change since the previous briefing.
-**Why reported today:** deadline passed
+**Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-27, not current risk; state is PENDING_VERIFICATION._
+**What changed:** No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.
+**Why reported today:** state changed to PENDING_VERIFICATION
 **Independent sources:** 3
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
@@ -116,13 +116,13 @@ _Patch priority combines three independent signals and is shown alongside, not f
 - **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment. (first seen 2026-09-29, last seen 2026-10-27; source date 2026-09-29; collected 2026-10-27)
 - **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-09-29, last seen 2026-10-27; source date 2026-09-29; collected 2026-10-27)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
-**Owner:** research | **Deadline:** 2026-10-06 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
+**Owner:** Unassigned (synthetic) | **Deadline:** 2026-10-06 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
 
 ## CTI-001:CVE-2026-88772 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88772
-**Severity:** high | **Score:** 50.59 | **State:** UNCHANGED
-**What changed:** No material change since the previous briefing.
-**Why reported today:** deadline passed
+**Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-27, not current risk; state is PENDING_VERIFICATION._
+**What changed:** No supporting evidence today (1 day(s) since last observed); not yet treated as reduced risk.
+**Why reported today:** state changed to PENDING_VERIFICATION
 **Independent sources:** 3
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
@@ -131,7 +131,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 - **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment. (first seen 2026-09-29, last seen 2026-10-27; source date 2026-09-29; collected 2026-10-27)
 - **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-09-29, last seen 2026-10-27; source date 2026-09-29; collected 2026-10-27)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
-**Owner:** research | **Deadline:** 2026-10-06 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
+**Owner:** Unassigned (synthetic) | **Deadline:** 2026-10-06 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
 
 ## CTI-001:CVE-2026-88779 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88779
@@ -142,16 +142,16 @@ _Patch priority combines three independent signals and is shown alongside, not f
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
 **Evidence:**
-- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. (added 2026-10-04, remediation due 2026-10-07). (first seen 2026-10-04, last seen 2026-10-27; source date 2026-10-04; collected 2026-10-27T16:44:51+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
-- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment. (first seen 2026-10-05, last seen 2026-10-27; source date 2026-10-05; collected 2026-10-27)
-- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-05, last seen 2026-10-27; source date 2026-10-05; collected 2026-10-27)
+- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Citrix NetScaler - Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. (added 2026-10-04, remediation due 2026-10-07). (first seen 2026-10-04, last seen 2026-10-28; source date 2026-10-04; collected 2026-10-28T17:13:20+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
+- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'citrix netscaler'). Edit that file to reflect your real environment. (first seen 2026-10-05, last seen 2026-10-28; source date 2026-10-05; collected 2026-10-28)
+- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'citrix netscaler' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-05, last seen 2026-10-28; source date 2026-10-05; collected 2026-10-28)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
 **Owner:** research | **Deadline:** 2026-10-12 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
 
 ## CTI-004:TI-2026-0002 - Indicator corroborated by multiple independent sources: TI-2026-0002
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -163,7 +163,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0003 - Indicator corroborated by multiple independent sources: TI-2026-0003
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -175,7 +175,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0007 - Indicator corroborated by multiple independent sources: TI-2026-0007
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -187,7 +187,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0016 - Indicator corroborated by multiple independent sources: TI-2026-0016
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -199,7 +199,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0019 - Indicator corroborated by multiple independent sources: TI-2026-0019
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -211,7 +211,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0020 - Indicator corroborated by multiple independent sources: TI-2026-0020
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -223,7 +223,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0021 - Indicator corroborated by multiple independent sources: TI-2026-0021
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -235,7 +235,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0022 - Indicator corroborated by multiple independent sources: TI-2026-0022
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -247,7 +247,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0023 - Indicator corroborated by multiple independent sources: TI-2026-0023
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -259,7 +259,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0025 - Indicator corroborated by multiple independent sources: TI-2026-0025
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -271,7 +271,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0026 - Indicator corroborated by multiple independent sources: TI-2026-0026
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -283,7 +283,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0028 - Indicator corroborated by multiple independent sources: TI-2026-0028
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -295,7 +295,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0029 - Indicator corroborated by multiple independent sources: TI-2026-0029
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -307,7 +307,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0031 - Indicator corroborated by multiple independent sources: TI-2026-0031
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 33 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 34 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -319,7 +319,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0048 - Indicator corroborated by multiple independent sources: TI-2026-0048
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -331,7 +331,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0049 - Indicator corroborated by multiple independent sources: TI-2026-0049
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -343,7 +343,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0050 - Indicator corroborated by multiple independent sources: TI-2026-0050
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -355,7 +355,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0051 - Indicator corroborated by multiple independent sources: TI-2026-0051
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -367,7 +367,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0052 - Indicator corroborated by multiple independent sources: TI-2026-0052
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -379,7 +379,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0053 - Indicator corroborated by multiple independent sources: TI-2026-0053
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -391,7 +391,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0054 - Indicator corroborated by multiple independent sources: TI-2026-0054
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -403,7 +403,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0055 - Indicator corroborated by multiple independent sources: TI-2026-0055
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -415,7 +415,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0056 - Indicator corroborated by multiple independent sources: TI-2026-0056
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -427,7 +427,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0057 - Indicator corroborated by multiple independent sources: TI-2026-0057
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -439,7 +439,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0058 - Indicator corroborated by multiple independent sources: TI-2026-0058
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -451,7 +451,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0059 - Indicator corroborated by multiple independent sources: TI-2026-0059
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -463,7 +463,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0060 - Indicator corroborated by multiple independent sources: TI-2026-0060
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -475,7 +475,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0061 - Indicator corroborated by multiple independent sources: TI-2026-0061
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -487,7 +487,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0062 - Indicator corroborated by multiple independent sources: TI-2026-0062
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -499,7 +499,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-004:TI-2026-0063 - Indicator corroborated by multiple independent sources: TI-2026-0063
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 31 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 32 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
