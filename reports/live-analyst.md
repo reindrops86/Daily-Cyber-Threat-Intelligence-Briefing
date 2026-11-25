@@ -1,6 +1,6 @@
-# Analyst Briefing - 2026-11-24
+# Analyst Briefing - 2026-11-25
 
-**Generated:** 2026-11-24
+**Generated:** 2026-11-25
 
 > LIVE DATA: vulnerability existence, exploitation status, and severity are sourced from the public CISA KEV catalog and the NVD API. Sector relevance and environment reachability are self-declared by the analyst in config/watchlist.json and are not independently verified -- edit that file to match your real environment before relying on this report. Infrastructure clusters, direct KEV exposure observations, and provider enrichment context may be supplied through data/manual_signals.json by Threat-Ingest. Imported provider context is evidence for analyst review, not an independent verdict of maliciousness. Actor-campaign and dark-web findings are unavailable unless supplied by an analyst.
 
@@ -19,7 +19,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 | CVE-2025-25249 | P1 - patch now | yes | 0.037 (90%) | 8.1 | CTI-001:CVE-2025-25249 |
 | CVE-2025-61624 | P1 - patch now | yes | 0.014 (73%) | 6.0 | CTI-001:CVE-2025-61624 |
 | CVE-2026-104935 | P1 - patch now | yes | 0.931 (100%) | 8.6 | CTI-001:CVE-2026-104935 |
-| CVE-2026-111357 | P1 - patch now | yes | 0.008 (58%) | 7.0 | CTI-001:CVE-2026-111357 |
+| CVE-2026-111357 | P1 - patch now | yes | 0.008 (57%) | 7.0 | CTI-001:CVE-2026-111357 |
 | CVE-2026-118527 | P1 - patch now | yes | 0.010 (63%) | 4.3 | CTI-001:CVE-2026-118527 |
 | CVE-2026-19490 | P1 - patch now | yes | 0.333 (98%) | 9.3 | CTI-001:CVE-2026-19490 |
 | CVE-2026-8452 | P1 - patch now | yes | 0.036 (90%) | 8.8 | CTI-001:CVE-2026-8452 |
@@ -31,7 +31,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2025-25249 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-25249
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-09, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (46 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (47 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -48,7 +48,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2025-61624 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2025-61624
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-11-15, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (9 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (10 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -63,7 +63,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2026-104935 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-104935
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-11-12, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (12 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (13 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -84,9 +84,9 @@ _Patch priority combines three independent signals and is shown alongside, not f
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
 **Evidence:**
-- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. (added 2026-10-30, remediation due 2026-11-02). (first seen 2026-10-30, last seen 2026-11-24; source date 2026-10-30; collected 2026-11-24T11:31:32+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
-- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment. (first seen 2026-10-31, last seen 2026-11-24; source date 2026-10-31; collected 2026-11-24)
-- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-31, last seen 2026-11-24; source date 2026-10-31; collected 2026-11-24)
+- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527. (added 2026-10-30, remediation due 2026-11-02). (first seen 2026-10-30, last seen 2026-11-25; source date 2026-10-30; collected 2026-11-25T11:31:30+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
+- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment. (first seen 2026-10-31, last seen 2026-11-25; source date 2026-10-31; collected 2026-11-25)
+- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-31, last seen 2026-11-25; source date 2026-10-31; collected 2026-11-25)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
 **Owner:** research | **Deadline:** 2026-11-07 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
@@ -99,16 +99,16 @@ _Patch priority combines three independent signals and is shown alongside, not f
 **Addresses:** PIR-001
 **Patch priority:** P1 - patch now (listed in CISA KEV, exploitation confirmed)
 **Evidence:**
-- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357. (added 2026-10-30, remediation due 2026-11-13). (first seen 2026-10-30, last seen 2026-11-24; source date 2026-10-30; collected 2026-11-24T11:31:32+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
-- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment. (first seen 2026-10-31, last seen 2026-11-24; source date 2026-10-31; collected 2026-11-24)
-- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-31, last seen 2026-11-24; source date 2026-10-31; collected 2026-11-24)
+- **Reported fact:** [cisa_kev, reliability A, confidence 0.99, supports] CISA KEV catalog: Ivanti Connect Secure - Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357. (added 2026-10-30, remediation due 2026-11-13). (first seen 2026-10-30, last seen 2026-11-25; source date 2026-10-30; collected 2026-11-25T11:31:30+00:00; [original source](https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json))
+- **Analyst assessment:** [user_watchlist_config, reliability B, confidence 0.60, supports] Declared reachable per config/watchlist.json (matched 'ivanti connect secure'). Edit that file to reflect your real environment. (first seen 2026-10-31, last seen 2026-11-25; source date 2026-10-31; collected 2026-11-25)
+- **Analyst assessment:** [user_watchlist_config, reliability C, confidence 0.60, supports] Sector relevance for 'ivanti connect secure' declared as 'airlines and healthcare' in config/watchlist.json; this is a self-declared judgment, not independently corroborated. (first seen 2026-10-31, last seen 2026-11-25; source date 2026-10-31; collected 2026-11-25)
 **Score components:** {'base': 70.0, 'amplifier_factor': 1.0, 'source_confidence': 1.1, 'signal_confidence': 0.73, 'asset_multiplier': 0.9}
 **Owner:** research | **Deadline:** 2026-11-07 | **Recommended action:** Patch or virtually patch within the SLA window; confirm compensating controls until then.
 **Verification method:** Re-scan the asset and confirm the vulnerability signature is no longer detected.
 
 ## CTI-001:CVE-2026-19490 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-19490
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-09, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (46 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (47 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -124,7 +124,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2026-8452 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-8452
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-09-25, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (60 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (61 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -140,7 +140,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2026-88771 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88771
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-27, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (28 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (29 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -155,7 +155,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2026-88772 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88772
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-27, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (28 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (29 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -170,7 +170,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-001:CVE-2026-88779 - Exploited vulnerability reachable in the environment and targeting our sector: CVE-2026-88779
 **Severity:** high | **Score:** 50.59 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-11-03, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (21 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (22 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 3
 **Addresses:** PIR-001
@@ -185,7 +185,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-005:CVE-2026-104935 - Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-104935
 **Severity:** low | **Score:** 28.35 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-15, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (40 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (41 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 2
 **Addresses:** PIR-002
@@ -199,7 +199,7 @@ _Patch priority combines three independent signals and is shown alongside, not f
 
 ## CTI-005:CVE-2026-88779 - Newly disclosed high-severity vulnerability reachable but not yet exploited: CVE-2026-88779
 **Severity:** low | **Score:** 28.35 | **State:** PENDING_VERIFICATION _Score and severity reflect the last active measurement on 2026-10-05, not current risk; state is PENDING_VERIFICATION._
-**What changed:** No supporting evidence today (50 day(s) since last observed); not yet treated as reduced risk.
+**What changed:** No supporting evidence today (51 day(s) since last observed); not yet treated as reduced risk.
 **Why reported today:** deadline passed
 **Independent sources:** 2
 **Addresses:** PIR-002
@@ -215,7 +215,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0002 - Indicator corroborated by multiple independent sources: TI-2026-0002
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -227,7 +227,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0003 - Indicator corroborated by multiple independent sources: TI-2026-0003
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -239,7 +239,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0007 - Indicator corroborated by multiple independent sources: TI-2026-0007
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -251,7 +251,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0016 - Indicator corroborated by multiple independent sources: TI-2026-0016
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -263,7 +263,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0019 - Indicator corroborated by multiple independent sources: TI-2026-0019
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -275,7 +275,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0020 - Indicator corroborated by multiple independent sources: TI-2026-0020
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -287,7 +287,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0021 - Indicator corroborated by multiple independent sources: TI-2026-0021
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -299,7 +299,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0022 - Indicator corroborated by multiple independent sources: TI-2026-0022
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -311,7 +311,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0023 - Indicator corroborated by multiple independent sources: TI-2026-0023
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -323,7 +323,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0025 - Indicator corroborated by multiple independent sources: TI-2026-0025
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -335,7 +335,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0026 - Indicator corroborated by multiple independent sources: TI-2026-0026
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -347,7 +347,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0028 - Indicator corroborated by multiple independent sources: TI-2026-0028
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -359,7 +359,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0029 - Indicator corroborated by multiple independent sources: TI-2026-0029
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -371,7 +371,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0031 - Indicator corroborated by multiple independent sources: TI-2026-0031
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-24, not current risk; state is STALE._
-**What changed:** No supporting evidence for 61 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 62 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -383,7 +383,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0048 - Indicator corroborated by multiple independent sources: TI-2026-0048
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -395,7 +395,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0049 - Indicator corroborated by multiple independent sources: TI-2026-0049
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -407,7 +407,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0050 - Indicator corroborated by multiple independent sources: TI-2026-0050
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -419,7 +419,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0051 - Indicator corroborated by multiple independent sources: TI-2026-0051
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -431,7 +431,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0052 - Indicator corroborated by multiple independent sources: TI-2026-0052
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -443,7 +443,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0053 - Indicator corroborated by multiple independent sources: TI-2026-0053
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -455,7 +455,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0054 - Indicator corroborated by multiple independent sources: TI-2026-0054
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -467,7 +467,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0055 - Indicator corroborated by multiple independent sources: TI-2026-0055
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -479,7 +479,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0056 - Indicator corroborated by multiple independent sources: TI-2026-0056
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -491,7 +491,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0057 - Indicator corroborated by multiple independent sources: TI-2026-0057
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -503,7 +503,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0058 - Indicator corroborated by multiple independent sources: TI-2026-0058
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -515,7 +515,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0059 - Indicator corroborated by multiple independent sources: TI-2026-0059
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -527,7 +527,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0060 - Indicator corroborated by multiple independent sources: TI-2026-0060
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -539,7 +539,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0061 - Indicator corroborated by multiple independent sources: TI-2026-0061
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -551,7 +551,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0062 - Indicator corroborated by multiple independent sources: TI-2026-0062
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -563,7 +563,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-004:TI-2026-0063 - Indicator corroborated by multiple independent sources: TI-2026-0063
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-26, not current risk; state is STALE._
-**What changed:** No supporting evidence for 59 day(s), past the 2-day freshness window for this finding type.
+**What changed:** No supporting evidence for 60 day(s), past the 2-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -575,7 +575,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:1.14.100.25 - Infrastructure enrichment observed for an indicator: 1.14.100.25
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -587,7 +587,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:103.42.30.245 - Infrastructure enrichment observed for an indicator: 103.42.30.245
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -599,7 +599,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:120.46.128.236 - Infrastructure enrichment observed for an indicator: 120.46.128.236
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -611,7 +611,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:130.94.29.211 - Infrastructure enrichment observed for an indicator: 130.94.29.211
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -623,7 +623,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:139.99.88.62 - Infrastructure enrichment observed for an indicator: 139.99.88.62
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -635,7 +635,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:155.103.71.233 - Infrastructure enrichment observed for an indicator: 155.103.71.233
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -647,7 +647,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:162.14.107.40 - Infrastructure enrichment observed for an indicator: 162.14.107.40
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -659,7 +659,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:23.159.160.195 - Infrastructure enrichment observed for an indicator: 23.159.160.195
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -671,7 +671,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:43.173.38.253 - Infrastructure enrichment observed for an indicator: 43.173.38.253
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -683,7 +683,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:45.76.110.248 - Infrastructure enrichment observed for an indicator: 45.76.110.248
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -695,7 +695,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:64.118.132.68 - Infrastructure enrichment observed for an indicator: 64.118.132.68
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -707,7 +707,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:89.106.83.156 - Infrastructure enrichment observed for an indicator: 89.106.83.156
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
@@ -719,7 +719,7 @@ This issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 
 
 ## CTI-006:93.177.77.234 - Infrastructure enrichment observed for an indicator: 93.177.77.234
 **Severity:** low | **Score:** 5.25 | **State:** STALE _Score and severity reflect the last active measurement on 2026-09-29, not current risk; state is STALE._
-**What changed:** No supporting evidence for 56 day(s), past the 3-day freshness window for this finding type.
+**What changed:** No supporting evidence for 57 day(s), past the 3-day freshness window for this finding type.
 **Why reported today:** deadline passed
 **Independent sources:** 1
 **Addresses:** PIR-005
